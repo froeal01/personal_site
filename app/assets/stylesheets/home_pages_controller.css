@@ -111,6 +111,9 @@ ul {
   .link_tiles_top .resume_red .resume_white {
     margin-top: 53.75px;
     background: #fff;
+    background-image: url("computer-sketch2.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
     display: block;
     width: 111.6087%;
     height: 127.5px;
@@ -226,6 +229,9 @@ ul {
     .link_tiles_bottom .about_me_red .about_me_white {
       margin-top: 53.75px;
       background: #fff;
+      background-image: url("about_me.png");
+      background-position: right bottom;
+      background-repeat: no-repeat;
       display: block;
       width: 111.6087%;
       height: 127.5px;

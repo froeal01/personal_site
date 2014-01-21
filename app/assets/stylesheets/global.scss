@@ -65,6 +65,9 @@ ul{
 		.resume_white{
 			margin-top: 53.75px;
 			background: #fff;
+			background-image: url("computer-sketch2.png");
+			background-position: right bottom; 
+   		background-repeat: no-repeat;
 			display: block;
 			width: columns(4.445);
 			height: 127.5px;
@@ -182,6 +185,9 @@ ul{
 				// @include offset(4.445,4.445);
 				margin-top: 53.75px;
 				background: #fff;
+				background-image: url("about_me.png");
+				background-position: right bottom; 
+   			background-repeat: no-repeat;
 				display: block;
 				width: columns(4.445);
 				height: 127.5px;
