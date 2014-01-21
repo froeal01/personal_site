@@ -1,0 +1,17 @@
+.current_projects {
+  -webkit-grid-column: 6;
+  -webkit-grid-row: 6 -1;
+  -webkit-grid-column-span: 6 -1;
+  -webkit-grid-row-span: 10 -1;
+  -moz-grid-column: 6;
+  -moz-grid-row: 6 -1;
+  -moz-grid-column-span: 6 -1;
+  -moz-grid-row-span: 10 -1;
+  -ms-grid-column: 6;
+  -ms-grid-row: 6 -1;
+  -ms-grid-column-span: 6 -1;
+  -ms-grid-row-span: 10 -1;
+  -o-grid-column: 6;
+  -o-grid-row: 6 -1;
+  -o-grid-column-span: 6 -1;
+  -o-grid-row-span: 10 -1; }

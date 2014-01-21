@@ -1,0 +1,239 @@
+body {
+  font-family: "Rock Salt", cursive, times;
+  line-height: 1.375; }
+
+p {
+  margin: 1em 0em 1.375em 10px;
+  font-size: 1em;
+  line-height: 1.375; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: bold;
+  color: black;
+  text-rendering: optimizelegibility; }
+
+h1 {
+  font-size: 2em;
+  line-height: 2.05; }
+
+h2 {
+  font-size: 1.5em;
+  line-height: 3.1;
+  margin-bottom: -0.32em; }
+
+body {
+  padding: 0 1em;
+  margin: 0;
+  background-color: #F8F8FF; }
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0; }
+
+.nav_bar,
+.link_tiles_top,
+.link_tiles_bottom {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  zoom: 1;
+  padding: 0; }
+  .nav_bar:before, .nav_bar:after,
+  .link_tiles_top:before,
+  .link_tiles_top:after,
+  .link_tiles_bottom:before,
+  .link_tiles_bottom:after {
+    content: "";
+    display: table; }
+  .nav_bar:after,
+  .link_tiles_top:after,
+  .link_tiles_bottom:after {
+    clear: both; }
+  .nav_bar > div,
+  .link_tiles_top > div,
+  .link_tiles_bottom > div {
+    float: left;
+    margin-right: 4.34783%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+ul {
+  display: inline;
+  list-style-type: none; }
+
+.nav_bar {
+  color: white;
+  width: 152.17391%;
+  font-family: "Rock Salt", cursive, times;
+  background: -webkit-gradient(radial, center center, 0, center center, 460, from(#c90d0d), to(#562727));
+  background: -webkit-radial-gradient(circle, #c90d0d, #562727);
+  background: -moz-radial-gradient(circle, #c90d0d, #562727);
+  background: -ms-radial-gradient(circle, #c90d0d, #562727);
+  border-radius: 2px 2px 2px 2px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+
+.link_tiles {
+  height: 27.5em;
+  border-width: medium;
+  padding: 5em 1em 5em 1em;
+  background-color: #fff; }
+
+.link_tiles_top .resume_red {
+  padding: 0;
+  margin-left: 0px;
+  margin-right: 180px;
+  background: #fff;
+  display: block;
+  width: 21.73913%;
+  height: 127.5px;
+  padding: 10px;
+  border-radius: 2px 2px 2px 2px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  background: -webkit-gradient(linear, left top, right top, from(#c90d0d), to(#562727));
+  background: -webkit-linear-gradient(left, #562727, #c90d0d);
+  background: -moz-linear-gradient(left, #562727, #c90d0d);
+  background: -ms-linear-gradient(left, #562727, #c90d0d);
+  background: -o-linear-gradient(left, #562727, #c90d0d); }
+  .link_tiles_top .resume_red > div {
+    float: left;
+    margin-right: 4.34783%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .link_tiles_top .resume_red .resume_white {
+    margin-top: 53.75px;
+    background: #fff;
+    display: block;
+    width: 111.6087%;
+    height: 127.5px;
+    padding: 10px;
+    border-radius: 2px 2px 2px 2px;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    position: relative;
+    bottom: 0px;
+    left: 105px; }
+.link_tiles_top .unknown_red {
+  padding: 0;
+  margin-left: 0px;
+  background: #fff;
+  display: block;
+  width: 21.73913%;
+  height: 127.5px;
+  padding: 10px;
+  border-radius: 2px 2px 2px 2px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  background: -webkit-gradient(linear, left top, right top, from(#c90d0d), to(#562727));
+  background: -webkit-linear-gradient(left, #562727, #c90d0d);
+  background: -moz-linear-gradient(left, #562727, #c90d0d);
+  background: -ms-linear-gradient(left, #562727, #c90d0d);
+  background: -o-linear-gradient(left, #562727, #c90d0d); }
+  .link_tiles_top .unknown_red > div {
+    float: left;
+    margin-right: 4.34783%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .link_tiles_top .unknown_red .unknown_white {
+    margin-top: 53.75px;
+    background: #fff;
+    display: block;
+    width: 111.6087%;
+    height: 127.5px;
+    padding: 10px;
+    border-radius: 2px 2px 2px 2px;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    position: relative;
+    bottom: 0px;
+    left: 105px; }
+
+.link_tiles_bottom {
+  margin-top: 111.3px; }
+  .link_tiles_bottom .git_red {
+    padding: 0;
+    margin-left: 210px;
+    margin-right: 180px;
+    background: #fff;
+    display: block;
+    width: 21.73913%;
+    height: 127.5px;
+    padding: 10px;
+    border-radius: 2px 2px 2px 2px;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    background: -webkit-gradient(linear, left top, right top, from(#c90d0d), to(#562727));
+    background: -webkit-linear-gradient(left, #562727, #c90d0d);
+    background: -moz-linear-gradient(left, #562727, #c90d0d);
+    background: -ms-linear-gradient(left, #562727, #c90d0d);
+    background: -o-linear-gradient(left, #562727, #c90d0d); }
+    .link_tiles_bottom .git_red > div {
+      float: left;
+      margin-right: 4.34783%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+    .link_tiles_bottom .git_red .git_white {
+      margin-top: 53.75px;
+      background: #fff;
+      display: block;
+      width: 111.6087%;
+      height: 127.5px;
+      padding: 10px;
+      border-radius: 2px 2px 2px 2px;
+      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      position: relative;
+      bottom: 0px;
+      left: 105px; }
+  .link_tiles_bottom .about_me_red {
+    margin-right: 105px;
+    background: #fff;
+    display: block;
+    padding: 0;
+    width: 22.26087%;
+    height: 127.5px;
+    padding: 10px;
+    border-radius: 2px 2px 2px 2px;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    background: -webkit-gradient(linear, left top, right top, from(#c90d0d), to(#562727));
+    background: -webkit-linear-gradient(left, #562727, #c90d0d);
+    background: -moz-linear-gradient(left, #562727, #c90d0d);
+    background: -ms-linear-gradient(left, #562727, #c90d0d);
+    background: -o-linear-gradient(left, #562727, #c90d0d); }
+    .link_tiles_bottom .about_me_red > div {
+      float: left;
+      margin-right: 4.34783%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+    .link_tiles_bottom .about_me_red .about_me_white {
+      margin-top: 53.75px;
+      background: #fff;
+      display: block;
+      width: 111.6087%;
+      height: 127.5px;
+      padding: 10px;
+      border-radius: 2px 2px 2px 2px;
+      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      position: relative;
+      bottom: 0px;
+      left: 105px; }

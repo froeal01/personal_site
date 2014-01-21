@@ -1,0 +1,199 @@
+body { padding: 0 1em; margin: 0; background-color: #F8F8FF; }
+.container { width: 100%; max-width: $max-width; margin: 0 auto; padding: 0; }
+
+// Elements acting like rows 
+
+.nav_bar,
+.link_tiles_top,
+.link_tiles_bottom{
+	@include row;
+}
+
+// Global SASS
+
+ul{
+	display: inline; 
+	list-style-type: none;
+}
+
+.nav_bar{
+	color: white;
+	width: columns(6); 
+	font-family: $font-family;
+	background: -webkit-gradient(radial, center center, 0, center center, 460, from(#c90d0d), to(#562727));
+	background: -webkit-radial-gradient(circle, #c90d0d, #562727);
+	background: -moz-radial-gradient(circle, #c90d0d, #562727);
+	background: -ms-radial-gradient(circle, #c90d0d, #562727);
+	border-radius: 2px 2px 2px 2px;
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+			-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+			box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+
+}
+
+.link_tiles{
+	height: $vertical-measure * 20;
+	border-width: medium;
+  padding: 5em 1em 5em 1em; 
+  background-color: #fff;
+}
+
+	.link_tiles_top{
+		// padding-bottom: 111.3px;
+
+	
+		.resume_red{ 
+			@include nesting;
+			margin-left: 0px;
+			margin-right: 180px;
+			background: #fff;
+			display: block;
+			width: columns(1);
+			height: 127.5px;
+			padding: 10px;
+			border-radius: 2px 2px 2px 2px;
+			-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+			-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+			box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+			background: -webkit-gradient(linear, left top, right top, from(#c90d0d), to(#562727));
+			background: -webkit-linear-gradient(left, #562727, #c90d0d);
+			background: -moz-linear-gradient(left, #562727, #c90d0d);
+			background: -ms-linear-gradient(left, #562727, #c90d0d);
+			background: -o-linear-gradient(left, #562727, #c90d0d);
+				
+
+		.resume_white{
+			margin-top: 53.75px;
+			background: #fff;
+			display: block;
+			width: columns(4.445);
+			height: 127.5px;
+			padding: 10px;
+			border-radius: 2px 2px 2px 2px;
+			-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+			-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+			box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+			position: relative;
+			bottom: 0px;
+			left: 105px; 
+		}
+		}
+
+			.unknown_red{ 
+			@include nesting;
+			margin-left: 0px;
+			background: #fff;
+			display: block;
+			width: columns(1);
+			height: 127.5px;
+			padding: 10px;
+			border-radius: 2px 2px 2px 2px;
+			-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+			-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+			box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+			background: -webkit-gradient(linear, left top, right top, from(#c90d0d), to(#562727));
+			background: -webkit-linear-gradient(left, #562727, #c90d0d);
+			background: -moz-linear-gradient(left, #562727, #c90d0d);
+			background: -ms-linear-gradient(left, #562727, #c90d0d);
+			background: -o-linear-gradient(left, #562727, #c90d0d);
+				
+
+		.unknown_white{
+			margin-top: 53.75px;
+			background: #fff;
+			display: block;
+			width: columns(4.445);
+			height: 127.5px;
+			padding: 10px;
+			border-radius: 2px 2px 2px 2px;
+			-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+			-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+			box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+			position: relative;
+			bottom: 0px;
+			left: 105px; 
+		}
+	}
+
+
+
+	}
+
+	.link_tiles_bottom {
+		margin-top: 111.3px;
+
+		.git_red{ 
+			@include nesting;
+			margin-left: 210px;
+			margin-right:180px;	
+			background: #fff;
+			display: block;
+			width: columns(1);
+			height: 127.5px;
+			padding: 10px;
+			border-radius: 2px 2px 2px 2px;
+			-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+			-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+			box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+			background: -webkit-gradient(linear, left top, right top, from(#c90d0d), to(#562727));
+			background: -webkit-linear-gradient(left, #562727, #c90d0d);
+			background: -moz-linear-gradient(left, #562727, #c90d0d);
+			background: -ms-linear-gradient(left, #562727, #c90d0d);
+			background: -o-linear-gradient(left, #562727, #c90d0d);
+				
+
+		.git_white{
+			margin-top: 53.75px;
+			background: #fff;
+			display: block;
+			width: columns(4.445);
+			height: 127.5px;
+			padding: 10px;
+			border-radius: 2px 2px 2px 2px;
+			-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+			-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+			box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+			position: relative;
+			bottom: 0px;
+			left: 105px; 
+			}
+		}
+
+			.about_me_red{ 
+				margin-right: 105px;
+				background: #fff;
+				display: block;
+				@include nesting;
+				width: columns(1.02);
+				height: 127.5px;
+				padding: 10px;
+				border-radius: 2px 2px 2px 2px;
+				-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+				-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+				box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+				background: -webkit-gradient(linear, left top, right top, from(#c90d0d), to(#562727));
+				background: -webkit-linear-gradient(left, #562727, #c90d0d);
+				background: -moz-linear-gradient(left, #562727, #c90d0d);
+				background: -ms-linear-gradient(left, #562727, #c90d0d);
+				background: -o-linear-gradient(left, #562727, #c90d0d);
+			
+
+			.about_me_white{
+				// @include offset(4.445,4.445);
+				margin-top: 53.75px;
+				background: #fff;
+				display: block;
+				width: columns(4.445);
+				height: 127.5px;
+				padding: 10px;
+				border-radius: 2px 2px 2px 2px;
+				-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+				-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+				box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+				position: relative;
+				bottom: 0px;
+				left: 105px; 
+			}
+			}
+
+	}
