@@ -16,10 +16,26 @@ ul{
 	list-style-type: none;
 }
 
+.resume_red p{
+	 visibility: hidden;
+    position: absolute;
+    margin: 0px;
+   	padding: 0px;
+   	font: times;
+   	color: blue;
+   	margin-top: 5px;
+}
+
+.nav_bar p{
+	margin: 0%;
+	padding-left: 0.5em;
+}
+
 .nav_bar{
 	color: white;
 	width: columns(6); 
 	font-family: $font-family;
+	font-size: 1.5em;
 	background: -webkit-gradient(radial, center center, 0, center center, 460, from(#c90d0d), to(#562727));
 	background: -webkit-radial-gradient(circle, #c90d0d, #562727);
 	background: -moz-radial-gradient(circle, #c90d0d, #562727);
@@ -63,10 +79,10 @@ ul{
 				
 
 		.resume_white{
-			margin-top: 53.75px;
+			// margin-top: 53.75px;
 			background: #fff;
 			background-image: url("computer-sketch2.png");
-			background-position: right bottom; 
+			background-position: center; 
    		background-repeat: no-repeat;
 			display: block;
 			width: columns(4.445);
@@ -77,7 +93,7 @@ ul{
 			-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
 			box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
 			position: relative;
-			bottom: 0px;
+			top: 53.75px;
 			left: 105px; 
 		}
 		}
@@ -102,8 +118,10 @@ ul{
 				
 
 		.unknown_white{
-			margin-top: 53.75px;
 			background: #fff;
+			background-image: url("resume.png");
+			background-position: center; 
+   		background-repeat: no-repeat;
 			display: block;
 			width: columns(4.445);
 			height: 127.5px;
@@ -113,7 +131,7 @@ ul{
 			-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
 			box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
 			position: relative;
-			bottom: 0px;
+			top: 53.75px;
 			left: 105px; 
 		}
 	}
@@ -146,7 +164,6 @@ ul{
 				
 
 		.git_white{
-			margin-top: 53.75px;
 			background: #fff;
 			display: block;
 			width: columns(4.445);
@@ -157,8 +174,8 @@ ul{
 			-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
 			box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
 			position: relative;
-			bottom: 0px;
-			left: 105px; 
+			top: 53.75px;
+			left: 105px;  
 			}
 		}
 
@@ -182,11 +199,9 @@ ul{
 			
 
 			.about_me_white{
-				// @include offset(4.445,4.445);
-				margin-top: 53.75px;
 				background: #fff;
 				background-image: url("about_me.png");
-				background-position: right bottom; 
+				background-position: bottom right; 
    			background-repeat: no-repeat;
 				display: block;
 				width: columns(4.445);
@@ -197,7 +212,7 @@ ul{
 				-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
 				box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
 				position: relative;
-				bottom: 0px;
+				top: 53.75px;
 				left: 105px; 
 			}
 			}
