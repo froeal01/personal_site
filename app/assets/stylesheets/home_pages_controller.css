@@ -1,68 +1,401 @@
-/*
-Syntax error: Invalid CSS after "			height": expected ";", was ": 20px;"
-        on line 4 of app/assets/stylesheets/global.scss
-        from line 5 of app/assets/stylesheets/home_pages_controller.scss
+body {
+  font-family: "Signika Negative", sans-serif, times;
+  line-height: 1.375; }
 
-1: body { padding: 0 1em; margin: 0; background-color: #FAFAFA; }
-2: footer {
-3: 			padding-top: 10pxl
-4: 			height: 20px;
-5: 			background: -webkit-gradient(linear, left top, right top, from(#c90d0d), to(#562727));
-6: 			background: -webkit-linear-gradient(left, #562727, #c90d0d);
-7: 			background: -moz-linear-gradient(left, #562727, #c90d0d);
-8: 			background: -ms-linear-gradient(left, #562727, #c90d0d);
-9: 			background: -o-linear-gradient(left, #562727, #c90d0d);
+p {
+  margin: 1em 0em 1.375em 10px;
+  font-size: 1em;
+  line-height: 1.375; }
 
-Backtrace:
-app/assets/stylesheets/global.scss:4
-app/assets/stylesheets/home_pages_controller.scss:5
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/scss/parser.rb:1147:in `expected'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/scss/parser.rb:1085:in `expected'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/scss/parser.rb:1080:in `tok!'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/scss/parser.rb:586:in `block in declaration_or_ruleset'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/scss/parser.rb:1123:in `call'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/scss/parser.rb:1123:in `rethrow'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/scss/parser.rb:592:in `declaration_or_ruleset'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/scss/parser.rb:554:in `block_child'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/scss/parser.rb:543:in `block_contents'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/scss/parser.rb:535:in `block'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/scss/parser.rb:529:in `ruleset'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/scss/parser.rb:553:in `block_child'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/scss/parser.rb:546:in `block_contents'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/scss/parser.rb:82:in `stylesheet'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/scss/parser.rb:27:in `parse'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/engine.rb:342:in `_to_tree'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/engine.rb:274:in `to_tree'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:225:in `visit_import'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/tree/root_node.rb:20:in `render'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/engine.rb:315:in `_render'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/engine.rb:262:in `render'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/plugin/compiler.rb:201:in `each'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/lib/sass/plugin/compiler.rb:283:in `block in watch'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/vendor/listen/lib/listen/adapters/polling.rb:56:in `call'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/vendor/listen/lib/listen/adapters/polling.rb:56:in `poll'
-/Users/alexfroelich/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.13/vendor/listen/lib/listen/adapters/polling.rb:32:in `block in start'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"			height\": expected \";\", was \": 20px;\"\A         on line 4 of app/assets/stylesheets/global.scss\A         from line 5 of app/assets/stylesheets/home_pages_controller.scss\A \A 1: body { padding: 0 1em; margin: 0; background-color: #FAFAFA; }\A 2: footer {\A 3: 			padding-top: 10pxl\A 4: 			height: 20px;\A 5: 			background: -webkit-gradient(linear, left top, right top, from(#c90d0d), to(#562727));\A 6: 			background: -webkit-linear-gradient(left, #562727, #c90d0d);\A 7: 			background: -moz-linear-gradient(left, #562727, #c90d0d);\A 8: 			background: -ms-linear-gradient(left, #562727, #c90d0d);\A 9: 			background: -o-linear-gradient(left, #562727, #c90d0d);"; }
+h2 {
+  font-size: 1.5em;
+  line-height: 3.1;
+  margin-bottom: -0.32em; }
+
+body {
+  padding: 0 1em;
+  margin: 0;
+  background-color: #FAFAFA; }
+
+footer {
+  padding-top: 10px;
+  height: 20px;
+  background: -webkit-gradient(linear, left top, right top, from(#c90d0d), to(#562727));
+  background: -webkit-linear-gradient(left, #562727, #c90d0d);
+  background: -moz-linear-gradient(left, #562727, #c90d0d);
+  background: -ms-linear-gradient(left, #562727, #c90d0d);
+  background: -o-linear-gradient(left, #562727, #c90d0d); }
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0; }
+
+footer,
+.nav_bar,
+.link_tiles_top,
+.link_tiles_bottom,
+.about_me_header,
+.current_projects_header,
+.resume_header,
+.contact_header {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  zoom: 1;
+  padding: 0; }
+  footer:before, footer:after,
+  .nav_bar:before,
+  .nav_bar:after,
+  .link_tiles_top:before,
+  .link_tiles_top:after,
+  .link_tiles_bottom:before,
+  .link_tiles_bottom:after,
+  .about_me_header:before,
+  .about_me_header:after,
+  .current_projects_header:before,
+  .current_projects_header:after,
+  .resume_header:before,
+  .resume_header:after,
+  .contact_header:before,
+  .contact_header:after {
+    content: "";
+    display: table; }
+  footer:after,
+  .nav_bar:after,
+  .link_tiles_top:after,
+  .link_tiles_bottom:after,
+  .about_me_header:after,
+  .current_projects_header:after,
+  .resume_header:after,
+  .contact_header:after {
+    clear: both; }
+  footer > div,
+  .nav_bar > div,
+  .link_tiles_top > div,
+  .link_tiles_bottom > div,
+  .about_me_header > div,
+  .current_projects_header > div,
+  .resume_header > div,
+  .contact_header > div {
+    float: left;
+    margin-right: 4.34783%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+ul {
+  display: inline;
+  list-style-type: none; }
+
+.nav_bar p {
+  margin: 0%;
+  padding-left: 0.5em; }
+
+.nav_bar {
+  color: white;
+  width: 152.17391%;
+  font-family: "Signika Negative", sans-serif, times;
+  font-size: 1.5em;
+  background: -webkit-gradient(radial, center center, 0, center center, 460, from(#c90d0d), to(#562727));
+  background: -webkit-radial-gradient(circle, #c90d0d, #562727);
+  background: -moz-radial-gradient(circle, #c90d0d, #562727);
+  background: -ms-radial-gradient(circle, #c90d0d, #562727);
+  border-radius: 2px 2px 2px 2px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+
+.link_tiles {
+  height: 27.5em;
+  border-width: medium;
+  padding: 5em 1em 5em 1em;
+  background-color: #fff; }
+
+.link_tiles_top .resume_red p {
+  display: none;
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  font: times;
+  color: blue;
+  margin-top: 5px; }
+.link_tiles_top .resume_red {
+  padding: 0;
+  margin-left: 0px;
+  margin-right: 180px;
+  background: #fff;
+  display: block;
+  width: 21.73913%;
+  height: 127.5px;
+  padding: 10px;
+  border-radius: 2px 2px 2px 2px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  background: -webkit-gradient(linear, left top, right top, from(#c90d0d), to(#562727));
+  background: -webkit-linear-gradient(left, #562727, #c90d0d);
+  background: -moz-linear-gradient(left, #562727, #c90d0d);
+  background: -ms-linear-gradient(left, #562727, #c90d0d);
+  background: -o-linear-gradient(left, #562727, #c90d0d); }
+  .link_tiles_top .resume_red > div {
+    float: left;
+    margin-right: 4.34783%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .link_tiles_top .resume_red .resume_white {
+    background: #fff;
+    background-image: url("computer-sketch2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    width: 111.6087%;
+    height: 127.5px;
+    padding: 10px;
+    border-radius: 2px 2px 2px 2px;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    position: relative;
+    top: 53.75px;
+    left: 105px; }
+.link_tiles_top .unknown_red p {
+  display: none;
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  font: times;
+  color: blue;
+  margin-top: 5px; }
+.link_tiles_top .unknown_red {
+  padding: 0;
+  margin-left: 0px;
+  background: #fff;
+  display: block;
+  width: 21.73913%;
+  height: 127.5px;
+  padding: 10px;
+  border-radius: 2px 2px 2px 2px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  background: -webkit-gradient(linear, left top, right top, from(#c90d0d), to(#562727));
+  background: -webkit-linear-gradient(left, #562727, #c90d0d);
+  background: -moz-linear-gradient(left, #562727, #c90d0d);
+  background: -ms-linear-gradient(left, #562727, #c90d0d);
+  background: -o-linear-gradient(left, #562727, #c90d0d); }
+  .link_tiles_top .unknown_red > div {
+    float: left;
+    margin-right: 4.34783%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .link_tiles_top .unknown_red .unknown_white {
+    background: #fff;
+    background-image: url("resume.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    width: 111.6087%;
+    height: 127.5px;
+    padding: 10px;
+    border-radius: 2px 2px 2px 2px;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    position: relative;
+    top: 53.75px;
+    left: 105px; }
+
+.link_tiles_bottom {
+  margin-top: 111.3px; }
+  .link_tiles_bottom .git_red p {
+    display: none;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    font: times;
+    color: blue;
+    margin-top: 5px; }
+  .link_tiles_bottom .git_red {
+    padding: 0;
+    margin-left: 210px;
+    margin-right: 180px;
+    background: #fff;
+    display: block;
+    width: 21.73913%;
+    height: 127.5px;
+    padding: 10px;
+    border-radius: 2px 2px 2px 2px;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    background: -webkit-gradient(linear, left top, right top, from(#c90d0d), to(#562727));
+    background: -webkit-linear-gradient(left, #562727, #c90d0d);
+    background: -moz-linear-gradient(left, #562727, #c90d0d);
+    background: -ms-linear-gradient(left, #562727, #c90d0d);
+    background: -o-linear-gradient(left, #562727, #c90d0d); }
+    .link_tiles_bottom .git_red > div {
+      float: left;
+      margin-right: 4.34783%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+    .link_tiles_bottom .git_red .git_white {
+      background: #fff;
+      display: block;
+      width: 111.6087%;
+      height: 127.5px;
+      padding: 10px;
+      border-radius: 2px 2px 2px 2px;
+      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      position: relative;
+      top: 53.75px;
+      left: 105px; }
+  .link_tiles_bottom .about_me_red p {
+    display: none;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    font: times;
+    color: blue;
+    margin-top: 5px; }
+  .link_tiles_bottom .about_me_red {
+    margin-right: 105px;
+    background: #fff;
+    display: block;
+    padding: 0;
+    width: 22.26087%;
+    height: 127.5px;
+    padding: 10px;
+    border-radius: 2px 2px 2px 2px;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    background: -webkit-gradient(linear, left top, right top, from(#c90d0d), to(#562727));
+    background: -webkit-linear-gradient(left, #562727, #c90d0d);
+    background: -moz-linear-gradient(left, #562727, #c90d0d);
+    background: -ms-linear-gradient(left, #562727, #c90d0d);
+    background: -o-linear-gradient(left, #562727, #c90d0d); }
+    .link_tiles_bottom .about_me_red > div {
+      float: left;
+      margin-right: 4.34783%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+    .link_tiles_bottom .about_me_red .about_me_white {
+      background: #fff;
+      background-image: url("about_me.png");
+      background-position: bottom right;
+      background-repeat: no-repeat;
+      display: block;
+      width: 111.6087%;
+      height: 127.5px;
+      padding: 10px;
+      border-radius: 2px 2px 2px 2px;
+      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      position: relative;
+      top: 53.75px;
+      left: 105px; }
+
+.about_me_header {
+  color: #562727;
+  width: 152.17391%;
+  font-family: "Signika Negative", sans-serif, times;
+  font-size: 1.5em;
+  border-width: 5px;
+  border-color: #562727;
+  border-radius: 2px 2px 2px 2px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+
+.about_me_header p {
+  margin: 0%;
+  padding-left: 0.5em;
+  padding-bottom: 33px;
+  padding-top: 33px; }
+
+.about_me_div {
+  height: 27.5em;
+  border-width: medium;
+  padding: 5em 1em 5em 1em;
+  background-color: #fff; }
+
+.current_projects_header {
+  color: #562727;
+  width: 152.17391%;
+  font-family: "Signika Negative", sans-serif, times;
+  font-size: 1.5em;
+  border-width: 5px;
+  border-color: #562727;
+  border-radius: 2px 2px 2px 2px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+
+.current_projects_header p {
+  margin: 0%;
+  padding-left: 0.5em;
+  padding-bottom: 33px;
+  padding-top: 33px; }
+
+.current_projects_div {
+  height: 27.5em;
+  border-width: medium;
+  padding: 5em 1em 5em 1em;
+  background-color: #fff; }
+
+.resume_header {
+  color: #562727;
+  width: 152.17391%;
+  font-family: "Signika Negative", sans-serif, times;
+  font-size: 1.5em;
+  border-width: 5px;
+  border-color: #562727;
+  border-radius: 2px 2px 2px 2px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+
+.resume_header p {
+  margin: 0%;
+  padding-left: 0.5em;
+  padding-bottom: 33px;
+  padding-top: 33px; }
+
+.resume_div {
+  height: 27.5em;
+  border-width: medium;
+  padding: 5em 1em 5em 1em;
+  background-color: #fff; }
+
+.contact_header {
+  color: #562727;
+  width: 152.17391%;
+  font-family: "Signika Negative", sans-serif, times;
+  font-size: 1.5em;
+  border-width: 5px;
+  border-color: #562727;
+  border-radius: 2px 2px 2px 2px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+
+.contact_header p {
+  margin: 0%;
+  padding-left: 0.5em;
+  padding-bottom: 33px;
+  padding-top: 33px; }
+
+.contact_div {
+  height: 27.5em;
+  border-width: medium;
+  padding: 5em 1em 5em 1em;
+  background-color: #fff; }

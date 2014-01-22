@@ -3,17 +3,13 @@
 // # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $(document).ready(function(){
-     var child = $(".resume_white");
-    $(".resume_red").hover(function(){
-       
-       child.animate({"top": '0px',"left": '0px'},500,function(){
-            $(this).css({"opacity": "0.4" });
-           $(".resume_red p").show();
+    $(".parent").hover(function(){
+        $(".child",this).animate({"top": '0px',"left": '0px'},500,function(){
+            $(this).css({"opacity": "0.4" }).prev().show(); 
         });
       },
-   function(){ $(".resume_red p").hide(), child.animate({"top": '53.75px',"left": '105px'},500,function(){
-            $(this).css({"opacity": "1" });
+   function(){ $(".child",this).animate({"top": '50px',"left": '50px'},500,function(){
+            $(this).css({"opacity": "1" }).prev().hide();       
         });
    });
-
 });
