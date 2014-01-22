@@ -9,17 +9,6 @@ p {
   line-height: $line-height;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  font-weight: bold;
-  color: $base-color;
-  text-rendering: optimizelegibility;
-}
-
-h1 {
-  font-size: 2em;
-  line-height: 2.05; // tweak to align h1 to baseline within container
-}
 
 h2 {
   font-size: 1.5em;

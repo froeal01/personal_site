@@ -8,10 +8,10 @@ $(document).ready(function(){
        
        child.animate({"top": '0px',"left": '0px'},500,function(){
             $(this).css({"opacity": "0.4" });
-           $(".resume_red p").css({"visibility": "visible"});
+           $(".resume_red p").show();
         });
       },
-   function(){ $(".resume_red p").css({"visibility": "hidden"}), child.animate({"top": '53.75px',"left": '105px'},500,function(){
+   function(){ $(".resume_red p").hide(), child.animate({"top": '53.75px',"left": '105px'},500,function(){
             $(this).css({"opacity": "1" });
         });
    });
