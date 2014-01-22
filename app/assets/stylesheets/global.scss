@@ -18,7 +18,10 @@ footer,
 .about_me_header,
 .current_projects_header,
 .resume_header,
-.contact_header{
+.contact_header,
+.ruby_div,
+.ruby_on_rails_div,
+.javaScript_div{
 	@include row;
 }
 
@@ -314,6 +317,57 @@ ul{
   background-color: #fff;
 
 	}
+
+
+		.ruby_div{
+			width: columns(1);
+			height: 100px;
+			background-color: purple;
+			margin-top: 23.335px;
+			margin-bottom: 46.666px;
+		}
+
+			.ruby_div p{
+		    position: center;
+		   	padding-left: 70px;
+		   	font: $font-family;
+		   	color: blue;
+		   	font-size: 30px;
+
+			}
+
+		.ruby_on_rails_div{
+			width: columns(1);
+			height: 100px;
+			background-color: blue;
+			margin-bottom: 46.666px;
+
+		}
+
+			.ruby_on_rails_div p{
+		    position: center;
+		   	padding-left: 8px;
+		   	font: $font-family;
+		   	color: white;
+		   	font-size: 30px;
+
+			}
+		.javaScript_div{
+			width: columns(1);
+			height: 100px;
+			background-color: yellow;
+
+		}
+
+			.javaScript_div p{
+		    position: center;
+		   	padding-left: 30px;
+		   	font: $font-family;
+		   	color: blue;
+		   	font-size: 30px;
+
+			}
+
 
 
 	.resume_header{

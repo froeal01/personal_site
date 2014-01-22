@@ -39,7 +39,10 @@ footer,
 .about_me_header,
 .current_projects_header,
 .resume_header,
-.contact_header {
+.contact_header,
+.ruby_div,
+.ruby_on_rails_div,
+.javaScript_div {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
@@ -59,7 +62,13 @@ footer,
   .resume_header:before,
   .resume_header:after,
   .contact_header:before,
-  .contact_header:after {
+  .contact_header:after,
+  .ruby_div:before,
+  .ruby_div:after,
+  .ruby_on_rails_div:before,
+  .ruby_on_rails_div:after,
+  .javaScript_div:before,
+  .javaScript_div:after {
     content: "";
     display: table; }
   footer:after,
@@ -69,7 +78,10 @@ footer,
   .about_me_header:after,
   .current_projects_header:after,
   .resume_header:after,
-  .contact_header:after {
+  .contact_header:after,
+  .ruby_div:after,
+  .ruby_on_rails_div:after,
+  .javaScript_div:after {
     clear: both; }
   footer > div,
   .nav_bar > div,
@@ -78,7 +90,10 @@ footer,
   .about_me_header > div,
   .current_projects_header > div,
   .resume_header > div,
-  .contact_header > div {
+  .contact_header > div,
+  .ruby_div > div,
+  .ruby_on_rails_div > div,
+  .javaScript_div > div {
     float: left;
     margin-right: 4.34783%;
     -webkit-box-sizing: border-box;
@@ -351,6 +366,45 @@ ul {
   border-width: medium;
   padding: 5em 1em 5em 1em;
   background-color: #fff; }
+
+.ruby_div {
+  width: 21.73913%;
+  height: 100px;
+  background-color: purple;
+  margin-top: 23.335px;
+  margin-bottom: 46.666px; }
+
+.ruby_div p {
+  position: center;
+  padding-left: 70px;
+  font: "Signika Negative", sans-serif, times;
+  color: blue;
+  font-size: 30px; }
+
+.ruby_on_rails_div {
+  width: 21.73913%;
+  height: 100px;
+  background-color: blue;
+  margin-bottom: 46.666px; }
+
+.ruby_on_rails_div p {
+  position: center;
+  padding-left: 8px;
+  font: "Signika Negative", sans-serif, times;
+  color: white;
+  font-size: 30px; }
+
+.javaScript_div {
+  width: 21.73913%;
+  height: 100px;
+  background-color: yellow; }
+
+.javaScript_div p {
+  position: center;
+  padding-left: 30px;
+  font: "Signika Negative", sans-serif, times;
+  color: blue;
+  font-size: 30px; }
 
 .resume_header {
   color: #562727;
