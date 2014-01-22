@@ -1,5 +1,6 @@
 PersonalSite::Application.routes.draw do
   root :to => "home_pages#index"
+  get '/show' => "home_pages#show"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

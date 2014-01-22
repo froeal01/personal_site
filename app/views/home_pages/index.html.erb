@@ -65,18 +65,21 @@
 	<!-- Current_Projects Header Ends -->
 	<!-- Current_Projects Div Starts -->
 	<div class = "current_projects_div">
-
+			<div class = "project_row_keeper">
 		<div class = "ruby_div" >
-			<p> Ruby </p>
+			<p><%=link_to "Ruby", '/show', class: "projects_link", value: "ruby_projects" %></p>
 		</div>
 		
 		<div class = "ruby_on_rails_div">
-			<p> Ruby on Rails </p>
+			<p><%=link_to "Ruby on Rails", '/show', class: "projects_link", value: "ruby_on_rails_projects" %></p>
 		</div>
+
 		
 		<div class = "javaScript_div">
-			<p> javaScript </p>
+			<p><%=link_to "javaScript", '/show', class: "projects_link", value: "ruby_projects" %></p>
 		</div>
+			</div>
+		<div class = "projects_list"></div>
 
 	</div>
 	<!-- Current_Projects Div Ends-->

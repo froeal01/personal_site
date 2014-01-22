@@ -2,11 +2,6 @@ body {
   font-family: "Signika Negative", sans-serif, times;
   line-height: 1.375; }
 
-p {
-  margin: 1em 0em 1.375em 10px;
-  font-size: 1em;
-  line-height: 1.375; }
-
 h2 {
   font-size: 1.5em;
   line-height: 3.1;
@@ -40,9 +35,8 @@ footer,
 .current_projects_header,
 .resume_header,
 .contact_header,
-.ruby_div,
-.ruby_on_rails_div,
-.javaScript_div {
+.project_row_keeper,
+.projects_list {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
@@ -63,12 +57,10 @@ footer,
   .resume_header:after,
   .contact_header:before,
   .contact_header:after,
-  .ruby_div:before,
-  .ruby_div:after,
-  .ruby_on_rails_div:before,
-  .ruby_on_rails_div:after,
-  .javaScript_div:before,
-  .javaScript_div:after {
+  .project_row_keeper:before,
+  .project_row_keeper:after,
+  .projects_list:before,
+  .projects_list:after {
     content: "";
     display: table; }
   footer:after,
@@ -79,9 +71,8 @@ footer,
   .current_projects_header:after,
   .resume_header:after,
   .contact_header:after,
-  .ruby_div:after,
-  .ruby_on_rails_div:after,
-  .javaScript_div:after {
+  .project_row_keeper:after,
+  .projects_list:after {
     clear: both; }
   footer > div,
   .nav_bar > div,
@@ -91,9 +82,8 @@ footer,
   .current_projects_header > div,
   .resume_header > div,
   .contact_header > div,
-  .ruby_div > div,
-  .ruby_on_rails_div > div,
-  .javaScript_div > div {
+  .project_row_keeper > div,
+  .projects_list > div {
     float: left;
     margin-right: 4.34783%;
     -webkit-box-sizing: border-box;
@@ -371,24 +361,21 @@ ul {
   width: 21.73913%;
   height: 100px;
   background-color: purple;
-  margin-top: 23.335px;
-  margin-bottom: 46.666px; }
+  margin-left: 150px;
+  margin-right: 40px; }
 
 .ruby_div p {
-  position: center;
-  padding-left: 70px;
   font: "Signika Negative", sans-serif, times;
-  color: blue;
-  font-size: 30px; }
+  font-size: 30px;
+  padding-left: 65px; }
 
 .ruby_on_rails_div {
   width: 21.73913%;
   height: 100px;
   background-color: blue;
-  margin-bottom: 46.666px; }
+  margin-right: 40px; }
 
 .ruby_on_rails_div p {
-  position: center;
   padding-left: 8px;
   font: "Signika Negative", sans-serif, times;
   color: white;
@@ -397,14 +384,26 @@ ul {
 .javaScript_div {
   width: 21.73913%;
   height: 100px;
-  background-color: yellow; }
+  background-color: yellow;
+  margin-right: 100px; }
 
 .javaScript_div p {
-  position: center;
   padding-left: 30px;
   font: "Signika Negative", sans-serif, times;
-  color: blue;
+  color: white;
   font-size: 30px; }
+
+.projects_link {
+  width: 21.73913%;
+  text-decoration: none;
+  color: white; }
+
+.projects_list {
+  border-style: solid;
+  border-color: red;
+  border-width: 6px;
+  height: auto;
+  width: 47.82609%; }
 
 .resume_header {
   color: #562727;

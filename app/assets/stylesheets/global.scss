@@ -19,9 +19,11 @@ footer,
 .current_projects_header,
 .resume_header,
 .contact_header,
-.ruby_div,
-.ruby_on_rails_div,
-.javaScript_div{
+.project_row_keeper,
+.projects_list{
+// .ruby_div,
+// .ruby_on_rails_div,
+// .javaScript_div{
 	@include row;
 }
 
@@ -64,6 +66,7 @@ ul{
 	.link_tiles_top{
 		// padding-bottom: 111.3px;
 
+//  ***************** RESUME TILE ********************************
 		.resume_red p{
 	 	display: none;
     position: absolute;
@@ -113,7 +116,7 @@ ul{
 			left: 105px; 
 		}
 		}
-
+//  ***************** UKNOWN TILE ********************************
 		.unknown_red p{
 	 	display: none;
     position: absolute;
@@ -167,7 +170,7 @@ ul{
 
 	.link_tiles_bottom {
 		margin-top: 111.3px;
-
+//  ***************** GIT TILE ********************************
 	.git_red p{
 	 	display: none;
     position: absolute;
@@ -212,6 +215,7 @@ ul{
 			left: 105px;  
 			}
 		}
+		//  ***************** ABOUT ME TILE ********************************
 			.about_me_red p{
 	 	display: none;
     position: absolute;
@@ -260,7 +264,7 @@ ul{
 			}
 
 	}
-
+//  ***************** ABOUT ME SECTION ********************************
 	.about_me_header{
 	color: #562727;
 	width: columns(6); 
@@ -288,7 +292,7 @@ ul{
   background-color: #fff;
 
 	}
-
+//  ***************** CURRENT PROJECTS ********************************
 
 	.current_projects_header{
 	color: #562727;
@@ -312,9 +316,10 @@ ul{
 
 	.current_projects_div{
 		height: $vertical-measure * 20;
-	border-width: medium;
-  padding: 5em 1em 5em 1em; 
-  background-color: #fff;
+		border-width: medium;
+	  padding: 5em 1em 5em 1em; 
+	  background-color: #fff;
+
 
 	}
 
@@ -323,29 +328,32 @@ ul{
 			width: columns(1);
 			height: 100px;
 			background-color: purple;
-			margin-top: 23.335px;
-			margin-bottom: 46.666px;
+			margin-left: 150px;
+			margin-right: 40px;
+			// margin-bottom: 100px;
+			
 		}
 
 			.ruby_div p{
-		    position: center;
-		   	padding-left: 70px;
 		   	font: $font-family;
-		   	color: blue;
 		   	font-size: 30px;
-
+		   	padding-left: 65px;
+		 
 			}
 
+				
 		.ruby_on_rails_div{
 			width: columns(1);
 			height: 100px;
 			background-color: blue;
-			margin-bottom: 46.666px;
+			
+			margin-right: 40px;
+			// margin-bottom: 100px;
 
 		}
 
 			.ruby_on_rails_div p{
-		    position: center;
+		    // position: center;
 		   	padding-left: 8px;
 		   	font: $font-family;
 		   	color: white;
@@ -356,20 +364,39 @@ ul{
 			width: columns(1);
 			height: 100px;
 			background-color: yellow;
+			
+			// margin-bottom: 100px;
+			margin-right: 100px;
+
 
 		}
 
 			.javaScript_div p{
-		    position: center;
+		    // position: center;
 		   	padding-left: 30px;
 		   	font: $font-family;
-		   	color: blue;
+		   	color: white;
 		   	font-size: 30px;
 
 			}
 
+		.projects_link{
+					width: columns(1);
+					text-decoration: none;
+					color: white;
+				}
 
 
+				.projects_list{
+					border-style: solid;
+					border-color: red;
+					border-width: 6px;
+					height: auto;
+					width: columns(2);
+				
+				}
+
+// **********************  Start of Resume Div ************************************
 	.resume_header{
 	color: #562727;
 	width: columns(6); 
@@ -397,7 +424,7 @@ ul{
   background-color: #fff;
 
 	}
-
+//  ***************** CONTACT SECTION ********************************
 	.contact_header{
 	color: #562727;
 	width: columns(6); 
