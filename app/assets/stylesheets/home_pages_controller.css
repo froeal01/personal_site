@@ -362,7 +362,8 @@ ul {
   height: 100px;
   background-color: purple;
   margin-left: 150px;
-  margin-right: 40px; }
+  margin-right: 40px;
+  margin-bottom: 50px; }
 
 .ruby_div p {
   font: "Signika Negative", sans-serif, times;
@@ -373,7 +374,8 @@ ul {
   width: 21.73913%;
   height: 100px;
   background-color: blue;
-  margin-right: 40px; }
+  margin-right: 40px;
+  margin-bottom: 50px; }
 
 .ruby_on_rails_div p {
   padding-left: 8px;
@@ -385,6 +387,7 @@ ul {
   width: 21.73913%;
   height: 100px;
   background-color: yellow;
+  margin-bottom: 50px;
   margin-right: 100px; }
 
 .javaScript_div p {
@@ -399,11 +402,22 @@ ul {
   color: white; }
 
 .projects_list {
-  border-style: solid;
-  border-color: red;
-  border-width: 6px;
+  border-color: black;
+  border-width: 2px;
   height: auto;
-  width: 47.82609%; }
+  width: 47.82609%;
+  font-family: "Signika Negative", sans-serif, times;
+  text-align: center;
+  color: blue; }
+
+#ruby_projects {
+  width: 100%; }
+
+#ruby_on_rails_projects {
+  width: 100%; }
+
+#javaScript_projects {
+  width: 100%; }
 
 .resume_header {
   color: #562727;

@@ -330,7 +330,7 @@ ul{
 			background-color: purple;
 			margin-left: 150px;
 			margin-right: 40px;
-			// margin-bottom: 100px;
+			margin-bottom: 50px;
 			
 		}
 
@@ -348,7 +348,7 @@ ul{
 			background-color: blue;
 			
 			margin-right: 40px;
-			// margin-bottom: 100px;
+			margin-bottom: 50px;
 
 		}
 
@@ -365,7 +365,7 @@ ul{
 			height: 100px;
 			background-color: yellow;
 			
-			// margin-bottom: 100px;
+			margin-bottom: 50px;
 			margin-right: 100px;
 
 
@@ -388,12 +388,23 @@ ul{
 
 
 				.projects_list{
-					border-style: solid;
-					border-color: red;
-					border-width: 6px;
+					border-color: black;
+					border-width: 2px;
 					height: auto;
 					width: columns(2);
-				
+					font-family: $font-family;
+					text-align: center;
+					color: blue;
+				}
+
+				#ruby_projects{
+					width: columns(4);
+				}
+				#ruby_on_rails_projects{
+					width: columns(4);
+				}
+				#javaScript_projects{
+					width: columns(4);
 				}
 
 // **********************  Start of Resume Div ************************************

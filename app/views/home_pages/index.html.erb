@@ -65,20 +65,23 @@
 	<!-- Current_Projects Header Ends -->
 	<!-- Current_Projects Div Starts -->
 	<div class = "current_projects_div">
+		<div class = "clear_button"></div>
+		<!-- Row Keeper Div Starts -->
 			<div class = "project_row_keeper">
-		<div class = "ruby_div" >
-			<p><%=link_to "Ruby", '/show', class: "projects_link", value: "ruby_projects" %></p>
-		</div>
-		
-		<div class = "ruby_on_rails_div">
-			<p><%=link_to "Ruby on Rails", '/show', class: "projects_link", value: "ruby_on_rails_projects" %></p>
-		</div>
+				<div class = "ruby_div" >
+					<p><%=link_to "Ruby", ruby_projects_path, class: "projects_link", value: "#ruby_projects" %></p>
+				</div>
+				
+				<div class = "ruby_on_rails_div">
+					<p><%=link_to "Ruby on Rails", ruby_on_rails_projects_path, class: "projects_link", value: "#ruby_on_rails_projects" %></p>
+				</div>
 
-		
-		<div class = "javaScript_div">
-			<p><%=link_to "javaScript", '/show', class: "projects_link", value: "ruby_projects" %></p>
-		</div>
+				
+				<div class = "javaScript_div">
+					<p><%=link_to "javaScript", '/show', class: "projects_link", value: "#javaScript" %></p>
+				</div>
 			</div>
+			<!-- Row Keeper Div Ends -->
 		<div class = "projects_list"></div>
 
 	</div>

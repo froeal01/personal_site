@@ -7,9 +7,4 @@ describe HomePagesController do
 			visit("/")
 		end
 	end
-	describe "#show" do
-		it "should allow me to enter a url with /show" do
-			visit("/show")
-		end
-	end
 end
