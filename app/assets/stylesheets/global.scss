@@ -20,7 +20,8 @@ footer,
 .resume_header,
 .contact_header,
 .project_row_keeper,
-.projects_list{
+.projects_list,
+.project_description{
 // .ruby_div,
 // .ruby_on_rails_div,
 // .javaScript_div{
@@ -397,6 +398,16 @@ ul{
 					color: blue;
 				}
 
+				.project_description{
+					border-color: black;
+					border-width: 2px;
+					height: auto;
+					width: columns(1);
+					font-family: $font-family;
+					text-align: center;
+					color: blue;
+				}
+
 				#ruby_projects{
 					width: columns(4);
 				}
@@ -406,6 +417,8 @@ ul{
 				#javaScript_projects{
 					width: columns(4);
 				}
+
+
 
 // **********************  Start of Resume Div ************************************
 	.resume_header{

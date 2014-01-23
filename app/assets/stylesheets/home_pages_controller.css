@@ -36,7 +36,8 @@ footer,
 .resume_header,
 .contact_header,
 .project_row_keeper,
-.projects_list {
+.projects_list,
+.project_description {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
@@ -60,7 +61,9 @@ footer,
   .project_row_keeper:before,
   .project_row_keeper:after,
   .projects_list:before,
-  .projects_list:after {
+  .projects_list:after,
+  .project_description:before,
+  .project_description:after {
     content: "";
     display: table; }
   footer:after,
@@ -72,7 +75,8 @@ footer,
   .resume_header:after,
   .contact_header:after,
   .project_row_keeper:after,
-  .projects_list:after {
+  .projects_list:after,
+  .project_description:after {
     clear: both; }
   footer > div,
   .nav_bar > div,
@@ -83,7 +87,8 @@ footer,
   .resume_header > div,
   .contact_header > div,
   .project_row_keeper > div,
-  .projects_list > div {
+  .projects_list > div,
+  .project_description > div {
     float: left;
     margin-right: 4.34783%;
     -webkit-box-sizing: border-box;
@@ -406,6 +411,15 @@ ul {
   border-width: 2px;
   height: auto;
   width: 47.82609%;
+  font-family: "Signika Negative", sans-serif, times;
+  text-align: center;
+  color: blue; }
+
+.project_description {
+  border-color: black;
+  border-width: 2px;
+  height: auto;
+  width: 21.73913%;
   font-family: "Signika Negative", sans-serif, times;
   text-align: center;
   color: blue; }

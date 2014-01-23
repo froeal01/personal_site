@@ -1,6 +1,6 @@
 PersonalSite::Application.routes.draw do
   root :to => "home_pages#index"
-  get '/show' => "home_pages#show"
+  get '/show' => "ruby_projects#show"
 
 
   resources :ruby_projects, only: [:index]
