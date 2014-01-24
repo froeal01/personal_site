@@ -34,7 +34,10 @@ ul{
 	display: inline; 
 	list-style-type: none;
 }
-
+p{
+	color: #206BA4;
+	font-family: $font-family;
+}
 span{
 	position:absolute; 
   width:100%;
@@ -55,7 +58,13 @@ span{
 	font-family: $font-family;
 	font-size: 1.5em;
 	background-color: #E7E4D3;
-
+	border-width: 5px;
+	border-color: #206BA4;
+	border-radius: 2px 2px 2px 2px;
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+	
 
 }
 
@@ -488,4 +497,51 @@ span{
 
 	label{
 		color: #206BA4;
+		float: left;
+		clear: left;
+		margin: 11px 20px 0 0;
+		width: 95px;
+		text-align: right;
+		text-shadow: 0px 1px 0px #f2f2f2;
+		font-size: 16px;
+	}
+
+	input{
+		width: 260px;
+		height: 35px;
+		padding: 5px 20px 0px 20px;
+		margin: 0 0 20px 0;
+		background: #F1EFE2;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-ms-border-radius: 5px;
+		box-shadow: 0px 1px 0px #f2f2f2;
+		-moz-box-shadow: 0px 1px 0px #f2f2f2;
+		-webkit-box-shadow: 0px 1px 0px #f2f2f2;
+		-ms-box-shadow: 0px 1px 0px #f2f2f2;
+		font-family: $font-family;
+		color: #C0C0C0;
+		text-transform: uppercase;
+		text-shadow: 0px -1px 0px #334f71;
+	}
+		input::-webkit-input-placeholder{
+			color: #EBF4FA;
+			text-shadow: 0px -1px 0px #38506b;
+		}
+
+		input::-moz-placeholder{
+			color: #EBF4FA;
+			text-shadow: 0px -1px 0px #38506b;
+		}
+
+	.inputs{
+			width: columns(4);
+		   box-shadow:
+          0 0 2px rgba(0, 0, 0, 0.2),  
+          0 1px 1px rgba(0, 0, 0, .2),
+          0 3px 0 #fff,
+          0 4px 0 rgba(0, 0, 0, .2),
+          0 6px 0 #fff,  
+          0 7px 0 rgba(0, 0, 0, .2);
 	}
