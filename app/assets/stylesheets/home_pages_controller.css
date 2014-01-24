@@ -15,11 +15,7 @@ body {
 footer {
   padding-top: 10px;
   height: 20px;
-  background: -webkit-gradient(linear, left top, right top, from(#c90d0d), to(#562727));
-  background: -webkit-linear-gradient(left, #562727, #c90d0d);
-  background: -moz-linear-gradient(left, #562727, #c90d0d);
-  background: -ms-linear-gradient(left, #562727, #c90d0d);
-  background: -o-linear-gradient(left, #562727, #c90d0d); }
+  background-color: #E7E4D3; }
 
 .container {
   width: 100%;
@@ -31,10 +27,10 @@ footer,
 .nav_bar,
 .link_tiles_top,
 .link_tiles_bottom,
-.about_me_header,
-.current_projects_header,
-.resume_header,
-.contact_header,
+#about_me_header,
+#current_projects_header,
+#resume_header,
+#contact_header,
 .project_row_keeper,
 .projects_list,
 .project_description,
@@ -51,14 +47,14 @@ footer,
   .link_tiles_top:after,
   .link_tiles_bottom:before,
   .link_tiles_bottom:after,
-  .about_me_header:before,
-  .about_me_header:after,
-  .current_projects_header:before,
-  .current_projects_header:after,
-  .resume_header:before,
-  .resume_header:after,
-  .contact_header:before,
-  .contact_header:after,
+  #about_me_header:before,
+  #about_me_header:after,
+  #current_projects_header:before,
+  #current_projects_header:after,
+  #resume_header:before,
+  #resume_header:after,
+  #contact_header:before,
+  #contact_header:after,
   .project_row_keeper:before,
   .project_row_keeper:after,
   .projects_list:before,
@@ -73,10 +69,10 @@ footer,
   .nav_bar:after,
   .link_tiles_top:after,
   .link_tiles_bottom:after,
-  .about_me_header:after,
-  .current_projects_header:after,
-  .resume_header:after,
-  .contact_header:after,
+  #about_me_header:after,
+  #current_projects_header:after,
+  #resume_header:after,
+  #contact_header:after,
   .project_row_keeper:after,
   .projects_list:after,
   .project_description:after,
@@ -86,10 +82,10 @@ footer,
   .nav_bar > div,
   .link_tiles_top > div,
   .link_tiles_bottom > div,
-  .about_me_header > div,
-  .current_projects_header > div,
-  .resume_header > div,
-  .contact_header > div,
+  #about_me_header > div,
+  #current_projects_header > div,
+  #resume_header > div,
+  #contact_header > div,
   .project_row_keeper > div,
   .projects_list > div,
   .project_description > div,
@@ -109,23 +105,24 @@ ul {
   display: inline;
   list-style-type: none; }
 
+span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1; }
+
 .nav_bar p {
   margin: 0%;
   padding-left: 0.5em; }
 
 .nav_bar {
-  color: white;
+  color: #206BA4;
   width: 152.17391%;
   font-family: "Signika Negative", sans-serif, times;
   font-size: 1.5em;
-  background: -webkit-gradient(radial, center center, 0, center center, 460, from(#c90d0d), to(#562727));
-  background: -webkit-radial-gradient(circle, #c90d0d, #562727);
-  background: -moz-radial-gradient(circle, #c90d0d, #562727);
-  background: -ms-radial-gradient(circle, #c90d0d, #562727);
-  border-radius: 2px 2px 2px 2px;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+  background-color: #E7E4D3; }
 
 .link_tiles {
   height: 27.5em;
@@ -138,8 +135,8 @@ ul {
   position: absolute;
   margin: 0px;
   padding: 0px;
-  font: times;
-  color: blue;
+  font: "Signika Negative", sans-serif, times;
+  color: #206BA4;
   margin-top: 5px; }
 .link_tiles_top .resume_red {
   padding: 0;
@@ -154,11 +151,7 @@ ul {
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  background: -webkit-gradient(linear, left top, right top, from(#c90d0d), to(#562727));
-  background: -webkit-linear-gradient(left, #562727, #c90d0d);
-  background: -moz-linear-gradient(left, #562727, #c90d0d);
-  background: -ms-linear-gradient(left, #562727, #c90d0d);
-  background: -o-linear-gradient(left, #562727, #c90d0d); }
+  background-color: #E7E4D3; }
   .link_tiles_top .resume_red > div {
     float: left;
     margin-right: 4.34783%;
@@ -186,12 +179,12 @@ ul {
   position: absolute;
   margin: 0px;
   padding: 0px;
-  font: times;
-  color: blue;
+  font: "Signika Negative", sans-serif, times;
+  color: #206BA4;
   margin-top: 5px; }
 .link_tiles_top .unknown_red {
   padding: 0;
-  margin-left: 0px;
+  margin-left: 50px;
   background: #fff;
   display: block;
   width: 21.73913%;
@@ -201,11 +194,7 @@ ul {
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  background: -webkit-gradient(linear, left top, right top, from(#c90d0d), to(#562727));
-  background: -webkit-linear-gradient(left, #562727, #c90d0d);
-  background: -moz-linear-gradient(left, #562727, #c90d0d);
-  background: -ms-linear-gradient(left, #562727, #c90d0d);
-  background: -o-linear-gradient(left, #562727, #c90d0d); }
+  background-color: #E7E4D3; }
   .link_tiles_top .unknown_red > div {
     float: left;
     margin-right: 4.34783%;
@@ -236,8 +225,8 @@ ul {
     position: absolute;
     margin: 0px;
     padding: 0px;
-    font: times;
-    color: blue;
+    font: "Signika Negative", sans-serif, times;
+    color: #206BA4;
     margin-top: 5px; }
   .link_tiles_bottom .git_red {
     padding: 0;
@@ -252,11 +241,7 @@ ul {
     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    background: -webkit-gradient(linear, left top, right top, from(#c90d0d), to(#562727));
-    background: -webkit-linear-gradient(left, #562727, #c90d0d);
-    background: -moz-linear-gradient(left, #562727, #c90d0d);
-    background: -ms-linear-gradient(left, #562727, #c90d0d);
-    background: -o-linear-gradient(left, #562727, #c90d0d); }
+    background-color: #E7E4D3; }
     .link_tiles_bottom .git_red > div {
       float: left;
       margin-right: 4.34783%;
@@ -265,6 +250,9 @@ ul {
       box-sizing: border-box; }
     .link_tiles_bottom .git_red .git_white {
       background: #fff;
+      background-image: url("mail_web.png");
+      background-position: center;
+      background-repeat: no-repeat;
       display: block;
       width: 111.6087%;
       height: 127.5px;
@@ -281,8 +269,8 @@ ul {
     position: absolute;
     margin: 0px;
     padding: 0px;
-    font: times;
-    color: blue;
+    font: "Signika Negative", sans-serif, times;
+    color: #206BA4;
     margin-top: 5px; }
   .link_tiles_bottom .about_me_red {
     margin-right: 105px;
@@ -296,11 +284,7 @@ ul {
     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    background: -webkit-gradient(linear, left top, right top, from(#c90d0d), to(#562727));
-    background: -webkit-linear-gradient(left, #562727, #c90d0d);
-    background: -moz-linear-gradient(left, #562727, #c90d0d);
-    background: -ms-linear-gradient(left, #562727, #c90d0d);
-    background: -o-linear-gradient(left, #562727, #c90d0d); }
+    background-color: #E7E4D3; }
     .link_tiles_bottom .about_me_red > div {
       float: left;
       margin-right: 4.34783%;
@@ -324,13 +308,13 @@ ul {
       top: 53.75px;
       left: 105px; }
 
-.about_me_header {
-  color: #562727;
+#about_me_header {
+  color: #206BA4;
   width: 152.17391%;
   font-family: "Signika Negative", sans-serif, times;
   font-size: 1.5em;
   border-width: 5px;
-  border-color: #562727;
+  border-color: #206BA4;
   border-radius: 2px 2px 2px 2px;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -348,13 +332,13 @@ ul {
   padding: 5em 1em 5em 1em;
   background-color: #fff; }
 
-.current_projects_header {
-  color: #562727;
+#current_projects_header {
+  color: #206BA4;
   width: 152.17391%;
   font-family: "Signika Negative", sans-serif, times;
   font-size: 1.5em;
   border-width: 5px;
-  border-color: #562727;
+  border-color: #206BA4;
   border-radius: 2px 2px 2px 2px;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -375,55 +359,68 @@ ul {
 .ruby_div {
   width: 21.73913%;
   height: 100px;
-  background-color: purple;
+  background-color: #EBF4FA;
   margin-left: 150px;
   margin-right: 40px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  border-radius: 2px 2px 2px 2px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
 
 .ruby_div p {
   font: "Signika Negative", sans-serif, times;
   font-size: 30px;
-  padding-left: 65px; }
+  padding-left: 65px;
+  color: #206BA4; }
 
 .ruby_on_rails_div {
   width: 21.73913%;
   height: 100px;
-  background-color: blue;
+  background-color: #C0C0C0;
   margin-right: 40px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  border-radius: 2px 2px 2px 2px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
 
 .ruby_on_rails_div p {
   padding-left: 8px;
   font: "Signika Negative", sans-serif, times;
-  color: white;
+  color: #206BA4;
   font-size: 30px; }
 
 .javaScript_div {
   width: 21.73913%;
   height: 100px;
-  background-color: yellow;
+  background-color: #F1EFE2;
   margin-bottom: 50px;
-  margin-right: 100px; }
+  margin-right: 100px;
+  border-radius: 2px 2px 2px 2px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
 
 .javaScript_div p {
   padding-left: 30px;
   font: "Signika Negative", sans-serif, times;
-  color: white;
+  color: #206BA4;
   font-size: 30px; }
 
 .projects_link {
   width: 21.73913%;
   text-decoration: none;
-  color: white; }
+  color: #206BA4; }
 
 .projects_list {
-  border-color: black;
+  border-color: #BBD9EE;
   border-width: 2px;
   height: auto;
   width: 47.82609%;
   font-family: "Signika Negative", sans-serif, times;
   text-align: center;
-  color: blue; }
+  color: #206BA4; }
 
 .project_description {
   border-color: black;
@@ -443,13 +440,13 @@ ul {
 #javaScript_projects {
   width: 100%; }
 
-.resume_header {
-  color: #562727;
+#resume_header {
+  color: #206BA4;
   width: 152.17391%;
   font-family: "Signika Negative", sans-serif, times;
   font-size: 1.5em;
   border-width: 5px;
-  border-color: #562727;
+  border-color: #206BA4;
   border-radius: 2px 2px 2px 2px;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -479,13 +476,13 @@ ul {
 embed {
   margin-left: 300px; }
 
-.contact_header {
-  color: #562727;
+#contact_header {
+  color: #206BA4;
   width: 152.17391%;
   font-family: "Signika Negative", sans-serif, times;
   font-size: 1.5em;
   border-width: 5px;
-  border-color: #562727;
+  border-color: #206BA4;
   border-radius: 2px 2px 2px 2px;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -502,3 +499,6 @@ embed {
   border-width: medium;
   padding: 5em 1em 5em 1em;
   background-color: #fff; }
+
+label {
+  color: #206BA4; }

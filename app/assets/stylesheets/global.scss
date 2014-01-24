@@ -2,11 +2,7 @@ body { padding: 0 1em; margin: 0; background-color: #FAFAFA; }
 footer {
 			padding-top: 10px;
 			height: 20px;
-			background: -webkit-gradient(linear, left top, right top, from(#c90d0d), to(#562727));
-			background: -webkit-linear-gradient(left, #562727, #c90d0d);
-			background: -moz-linear-gradient(left, #562727, #c90d0d);
-			background: -ms-linear-gradient(left, #562727, #c90d0d);
-			background: -o-linear-gradient(left, #562727, #c90d0d);
+			background-color: #E7E4D3;
 }
 .container { width: 100%; max-width: $max-width; margin: 0 auto; padding: 0; }
 
@@ -15,17 +11,14 @@ footer,
 .nav_bar,
 .link_tiles_top,
 .link_tiles_bottom,
-.about_me_header,
-.current_projects_header,
-.resume_header,
-.contact_header,
+#about_me_header,
+ #current_projects_header,
+#resume_header,
+#contact_header,
 .project_row_keeper,
 .projects_list,
 .project_description,
 .resume_row_keeper{
-// .ruby_div,
-// .ruby_on_rails_div,
-// .javaScript_div{
 	@include row;
 }
 
@@ -42,6 +35,14 @@ ul{
 	list-style-type: none;
 }
 
+span{
+	position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  z-index: 1;
+}
 
 .nav_bar p{
 	margin: 0%;
@@ -49,18 +50,12 @@ ul{
 }
 
 .nav_bar{
-	color: white;
+	color: #206BA4;
 	width: columns(6); 
 	font-family: $font-family;
 	font-size: 1.5em;
-	background: -webkit-gradient(radial, center center, 0, center center, 460, from(#c90d0d), to(#562727));
-	background: -webkit-radial-gradient(circle, #c90d0d, #562727);
-	background: -moz-radial-gradient(circle, #c90d0d, #562727);
-	background: -ms-radial-gradient(circle, #c90d0d, #562727);
-	border-radius: 2px 2px 2px 2px;
-	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
-			-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
-			box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+	background-color: #E7E4D3;
+
 
 }
 
@@ -80,8 +75,8 @@ ul{
     position: absolute;
     margin: 0px;
    	padding: 0px;
-   	font: times;
-   	color: blue;
+   	font: $font-family;
+   	color: #206BA4;
    	margin-top: 5px;
 }
 	
@@ -98,12 +93,7 @@ ul{
 			-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
 			-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
 			box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
-			background: -webkit-gradient(linear, left top, right top, from(#c90d0d), to(#562727));
-			background: -webkit-linear-gradient(left, #562727, #c90d0d);
-			background: -moz-linear-gradient(left, #562727, #c90d0d);
-			background: -ms-linear-gradient(left, #562727, #c90d0d);
-			background: -o-linear-gradient(left, #562727, #c90d0d);
-				
+			background-color: #E7E4D3;
 
 		.resume_white{
 			// margin-top: 53.75px;
@@ -130,13 +120,13 @@ ul{
     position: absolute;
     margin: 0px;
    	padding: 0px;
-   	font: times;
-   	color: blue;
+   	font: $font-family;
+   	color: #206BA4;
    	margin-top: 5px;
 }
 			.unknown_red{ 
 			@include nesting;
-			margin-left: 0px;
+			margin-left: 50px;
 			background: #fff;
 			display: block;
 			width: columns(1);
@@ -146,12 +136,7 @@ ul{
 			-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
 			-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
 			box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
-			background: -webkit-gradient(linear, left top, right top, from(#c90d0d), to(#562727));
-			background: -webkit-linear-gradient(left, #562727, #c90d0d);
-			background: -moz-linear-gradient(left, #562727, #c90d0d);
-			background: -ms-linear-gradient(left, #562727, #c90d0d);
-			background: -o-linear-gradient(left, #562727, #c90d0d);
-				
+			background-color: #E7E4D3;
 
 		.unknown_white{
 			background: #fff;
@@ -184,8 +169,8 @@ ul{
     position: absolute;
     margin: 0px;
    	padding: 0px;
-   	font: times;
-   	color: blue;
+   	font: $font-family;
+   	color: #206BA4;
    	margin-top: 5px;
 }
 		.git_red{ 
@@ -201,15 +186,13 @@ ul{
 			-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
 			-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
 			box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
-			background: -webkit-gradient(linear, left top, right top, from(#c90d0d), to(#562727));
-			background: -webkit-linear-gradient(left, #562727, #c90d0d);
-			background: -moz-linear-gradient(left, #562727, #c90d0d);
-			background: -ms-linear-gradient(left, #562727, #c90d0d);
-			background: -o-linear-gradient(left, #562727, #c90d0d);
-				
+			background-color: #E7E4D3;				
 
 		.git_white{
 			background: #fff;
+			background-image: url("mail_web.png");
+			background-position: center; 
+   		background-repeat: no-repeat;
 			display: block;
 			width: columns(4.445);
 			height: 127.5px;
@@ -229,8 +212,8 @@ ul{
     position: absolute;
     margin: 0px;
    	padding: 0px;
-   	font: times;
-   	color: blue;
+   	font: $font-family;
+   	color: #206BA4;
    	margin-top: 5px;
 }
 			.about_me_red{ 
@@ -245,12 +228,7 @@ ul{
 				-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
 				-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
 				box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
-				background: -webkit-gradient(linear, left top, right top, from(#c90d0d), to(#562727));
-				background: -webkit-linear-gradient(left, #562727, #c90d0d);
-				background: -moz-linear-gradient(left, #562727, #c90d0d);
-				background: -ms-linear-gradient(left, #562727, #c90d0d);
-				background: -o-linear-gradient(left, #562727, #c90d0d);
-			
+				background-color: #E7E4D3;			
 
 			.about_me_white{
 				background: #fff;
@@ -273,13 +251,13 @@ ul{
 
 	}
 //  ***************** ABOUT ME SECTION ********************************
-	.about_me_header{
-	color: #562727;
+	#about_me_header{
+	color: #206BA4;
 	width: columns(6); 
 	font-family: $font-family;
 	font-size: 1.5em;
 	border-width: 5px;
-	border-color: #562727;
+	border-color: #206BA4;
 	border-radius: 2px 2px 2px 2px;
 	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
 	-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
@@ -302,13 +280,13 @@ ul{
 	}
 //  ***************** CURRENT PROJECTS ********************************
 
-	.current_projects_header{
-	color: #562727;
+	#current_projects_header{
+	color: #206BA4;
 	width: columns(6); 
 	font-family: $font-family;
 	font-size: 1.5em;
 	border-width: 5px;
-	border-color: #562727;
+	border-color: #206BA4;
 	border-radius: 2px 2px 2px 2px;
 	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
 	-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
@@ -335,10 +313,14 @@ ul{
 		.ruby_div{
 			width: columns(1);
 			height: 100px;
-			background-color: purple;
+			background-color:#EBF4FA;
 			margin-left: 150px;
 			margin-right: 40px;
 			margin-bottom: 50px;
+				border-radius: 2px 2px 2px 2px;
+			-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+			-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+			box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
 			
 		}
 
@@ -346,6 +328,7 @@ ul{
 		   	font: $font-family;
 		   	font-size: 30px;
 		   	padding-left: 65px;
+		   	color: #206BA4;
 		 
 			}
 
@@ -353,10 +336,14 @@ ul{
 		.ruby_on_rails_div{
 			width: columns(1);
 			height: 100px;
-			background-color: blue;
+			background-color: #C0C0C0;
 			
 			margin-right: 40px;
 			margin-bottom: 50px;
+			border-radius: 2px 2px 2px 2px;
+			-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+			-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+			box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
 
 		}
 
@@ -364,18 +351,20 @@ ul{
 		    // position: center;
 		   	padding-left: 8px;
 		   	font: $font-family;
-		   	color: white;
+		   	color: #206BA4;
 		   	font-size: 30px;
 
 			}
 		.javaScript_div{
 			width: columns(1);
 			height: 100px;
-			background-color: yellow;
-			
+			background-color: #F1EFE2;
 			margin-bottom: 50px;
 			margin-right: 100px;
-
+				border-radius: 2px 2px 2px 2px;
+			-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+			-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+			box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
 
 		}
 
@@ -383,7 +372,7 @@ ul{
 		    // position: center;
 		   	padding-left: 30px;
 		   	font: $font-family;
-		   	color: white;
+		   	color: #206BA4;
 		   	font-size: 30px;
 
 			}
@@ -391,18 +380,18 @@ ul{
 		.projects_link{
 					width: columns(1);
 					text-decoration: none;
-					color: white;
+					color: #206BA4;
 				}
 
 
 				.projects_list{
-					border-color: black;
+					border-color: #BBD9EE;
 					border-width: 2px;
 					height: auto;
 					width: columns(2);
 					font-family: $font-family;
 					text-align: center;
-					color: blue;
+					color: #206BA4;
 				}
 
 				.project_description{
@@ -428,13 +417,13 @@ ul{
 
 
 // **********************  Start of Resume Div ************************************
-	.resume_header{
-	color: #562727;
+	#resume_header{
+	color: #206BA4;
 	width: columns(6); 
 	font-family: $font-family;
 	font-size: 1.5em;
 	border-width: 5px;
-	border-color: #562727;
+	border-color: #206BA4;
 	border-radius: 2px 2px 2px 2px;
 	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
 	-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
@@ -470,13 +459,13 @@ ul{
 		margin-left: 300px;
 	}
 //  ***************** CONTACT SECTION ********************************
-	.contact_header{
-	color: #562727;
+	#contact_header{
+	color: #206BA4;
 	width: columns(6); 
 	font-family: $font-family;
 	font-size: 1.5em;
 	border-width: 5px;
-	border-color: #562727;
+	border-color: #206BA4;
 	border-radius: 2px 2px 2px 2px;
 	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
 	-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
@@ -495,5 +484,8 @@ ul{
 	border-width: medium;
   padding: 5em 1em 5em 1em; 
   background-color: #fff;
+	}
 
+	label{
+		color: #206BA4;
 	}
