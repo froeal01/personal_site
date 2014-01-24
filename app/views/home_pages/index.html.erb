@@ -94,7 +94,14 @@
 	<!-- Resume Header Ends -->
 	<!-- Resume Div Starts -->
 	<div class = "resume_div">
-
+		<div class	= "resume_row_keeper">
+			<div class = "linkedin_div">
+				<a href="http://linkedin.com/pub/alex-froelich/78/b44/766/"><%= image_tag('linkedin-logo.jpg')%></a>
+			</div>
+			<div class = "resume_pdf">
+			<a href = '/resume'><%= image_tag('Resume_Click.png') %></a>
+			</div>
+		</div>
 	</div>
 	<!-- Resume Div Ends-->
 	<!-- Contact Header Starts -->
@@ -104,6 +111,8 @@
 	<!-- Contact Header Ends -->
 	<!-- Contact Div Starts -->
 	<div class = "contact_div">
+
+		<%= render "contact/form" %>
 
 	</div>
 	<!-- Contact Div Ends-->

@@ -21,7 +21,8 @@ footer,
 .contact_header,
 .project_row_keeper,
 .projects_list,
-.project_description{
+.project_description,
+.resume_row_keeper{
 // .ruby_div,
 // .ruby_on_rails_div,
 // .javaScript_div{
@@ -30,6 +31,12 @@ footer,
 
 // Global SASS
 
+
+.flash {
+	font-family: $font-family;
+	background-color: deep pink;
+	color: blue;
+}
 ul{
 	display: inline; 
 	list-style-type: none;
@@ -444,9 +451,23 @@ ul{
 	.resume_div{
 	height: $vertical-measure * 20;
 	border-width: medium;
-  padding: 5em 1em 5em 1em; 
+  padding: 8em 1em 5em 1em; 
   background-color: #fff;
+	}
 
+	.linkedin_div{
+		width:columns(2);
+		margin-left: 30px;
+		top: 20px;
+	}
+
+	.resume_pdf{
+		width:columns(1);
+		margin-left:  80px;
+	}
+
+	embed{
+		margin-left: 300px;
 	}
 //  ***************** CONTACT SECTION ********************************
 	.contact_header{

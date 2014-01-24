@@ -1,11 +1,14 @@
 PersonalSite::Application.routes.draw do
   root :to => "home_pages#index"
   get '/show' => "ruby_projects#show"
-
-
+  get '/contact' => 'contact#new'
+  post 'contact' => 'contact#create'
+  get '/resume' => 'pdfs#index'
+  
   resources :ruby_projects, only: [:index]
   resources :ruby_on_rails_projects, only: [:index]
   resources :javascript_projects, only: [:index]
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

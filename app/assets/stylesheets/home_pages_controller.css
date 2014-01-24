@@ -37,7 +37,8 @@ footer,
 .contact_header,
 .project_row_keeper,
 .projects_list,
-.project_description {
+.project_description,
+.resume_row_keeper {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
@@ -63,7 +64,9 @@ footer,
   .projects_list:before,
   .projects_list:after,
   .project_description:before,
-  .project_description:after {
+  .project_description:after,
+  .resume_row_keeper:before,
+  .resume_row_keeper:after {
     content: "";
     display: table; }
   footer:after,
@@ -76,7 +79,8 @@ footer,
   .contact_header:after,
   .project_row_keeper:after,
   .projects_list:after,
-  .project_description:after {
+  .project_description:after,
+  .resume_row_keeper:after {
     clear: both; }
   footer > div,
   .nav_bar > div,
@@ -88,12 +92,18 @@ footer,
   .contact_header > div,
   .project_row_keeper > div,
   .projects_list > div,
-  .project_description > div {
+  .project_description > div,
+  .resume_row_keeper > div {
     float: left;
     margin-right: 4.34783%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
+
+.flash {
+  font-family: "Signika Negative", sans-serif, times;
+  background-color: deep pink;
+  color: blue; }
 
 ul {
   display: inline;
@@ -454,8 +464,20 @@ ul {
 .resume_div {
   height: 27.5em;
   border-width: medium;
-  padding: 5em 1em 5em 1em;
+  padding: 8em 1em 5em 1em;
   background-color: #fff; }
+
+.linkedin_div {
+  width: 47.82609%;
+  margin-left: 30px;
+  top: 20px; }
+
+.resume_pdf {
+  width: 21.73913%;
+  margin-left: 80px; }
+
+embed {
+  margin-left: 300px; }
 
 .contact_header {
   color: #562727;
