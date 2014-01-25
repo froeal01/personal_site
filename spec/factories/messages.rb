@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 FactoryGirl.define do
 	factory :message do |f|
 		f.name 'test'
