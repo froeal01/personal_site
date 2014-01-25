@@ -47,7 +47,7 @@ end
 
 # Use debugger
 gem 'debugger', group: [:development, :test]
-gem "cucumber-rails", "~> 1.4.0", group: [:development, :test]
+gem "cucumber-rails", "~> 1.4.0", group: [:test]
 gem 'rspec-rails', group: [:development, :test]
 gem "capybara", "~> 2.2.1", group: [:development, :test]
 gem 'shoulda-matchers', group: [:development, :test]
