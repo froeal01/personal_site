@@ -1,8 +1,8 @@
 PersonalSite::Application.routes.draw do
   root :to => "home_pages#index"
   get '/show' => "ruby_projects#show"
-  get '/contact' => 'contact#new'
-  post 'contact' => 'contact#create'
+  get '/contact' => 'contacts#new'
+  post 'contact' => 'contacts#create'
   get '/resume' => 'pdfs#index'
   
   resources :ruby_projects, only: [:index]
