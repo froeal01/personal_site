@@ -379,7 +379,7 @@ span{
 			width: columns(1);
 			height: 100px;
 			background-color: #EBF4FA;
-			margin-bottom: 50px;
+			margin-bottom: 40px;
 			margin-right: 100px;
 			border: 1px solid #EBF4FA;
    		border-radius: 10px 10px 10px 10px;
@@ -409,7 +409,7 @@ span{
 					// border-color: #E7E4D3;
 					border-width: 2px;
 					height: auto;
-					width: columns(2);
+					width: columns(2.23);
 					font-family: $font-family;
 					text-align: center;
 					color: #206BA4;
@@ -439,8 +439,7 @@ span{
 
 				.project_description{
 					height: auto;
-					width: columns(1);
-
+					width: columns(2.05);
 					margin-top: 35px;
 					font-family: $font-family;
 					text-align: center;

@@ -2,10 +2,8 @@
 
 <div id = "ruby_projects">
 	<ul>
-		<li><%= link_to "test 1", '/show', class: "single_project"%></li>
-		<li> Test 2 </li>
-		<li> Test 3 </li>
-		<li> Test 4 </li>
-		<li> Test 5 </li>
+		<% @projects.each do |project| %>
+			<li><%=link_to "#{project.name}", ruby_project_path(project.id), class: "single_project" %></li>
+		<% end %>
 	</ul>
 </div>

@@ -418,7 +418,7 @@ span {
   width: 21.73913%;
   height: 100px;
   background-color: #EBF4FA;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   margin-right: 100px;
   border: 1px solid #EBF4FA;
   border-radius: 10px 10px 10px 10px;
@@ -441,7 +441,7 @@ span {
 .projects_list {
   border-width: 2px;
   height: auto;
-  width: 47.82609%;
+  width: 53.82609%;
   font-family: "Signika Negative", sans-serif, times;
   text-align: center;
   color: #206BA4;
@@ -468,7 +468,7 @@ span {
 
 .project_description {
   height: auto;
-  width: 21.73913%;
+  width: 49.13043%;
   margin-top: 35px;
   font-family: "Signika Negative", sans-serif, times;
   text-align: center;
