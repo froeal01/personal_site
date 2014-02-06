@@ -1,4 +1,4 @@
-<%= form_for @message, :url => contact_path do |form| %>
+<%= form_for @message, :validate => true, :url => contact_path do |form| %>
     <div class= "inputs" >
       <p> *please enter all fields </p>
       <%= form.label :name %>
