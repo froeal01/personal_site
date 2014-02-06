@@ -19,6 +19,8 @@ footer,
 .projects_list,
 .project_description,
 .resume_row_keeper,
+.me_img_wrapper,
+iframe,	
 .submit{
 	@include row;
 }
@@ -47,7 +49,10 @@ span{
   left: 0;
   z-index: 1;
 }
-
+iframe{
+	width: 75%;
+	margin-left: 150px;
+}
 .nav_bar p{
 	margin: 0%;
 	padding-left: 0.5em;
@@ -292,8 +297,24 @@ span{
 	.about_me_div{
 		height: $vertical-measure * 20;
 	border-width: medium;
-  padding: 5em 1em 5em 1em; 
+  padding: 4em 1em 5em 1em; 
   background-color: #fff;
+
+  .me_img_wrapper{
+  	height: 500px;
+  	width: 500px;
+  	margin-left: 75px;
+  	position: absolute;
+
+  }
+
+  .about_me_img{
+  	width: columns(2);
+  	position: relative;	
+  	height: 500px;
+  	border-width: 50px;
+  	border-color: black; 	 
+  }
 
 	}
 //  ***************** CURRENT PROJECTS ********************************
@@ -379,7 +400,7 @@ span{
 			width: columns(1);
 			height: 100px;
 			background-color: #EBF4FA;
-			margin-bottom: 50px;
+			margin-bottom: 40px;
 			margin-right: 100px;
 			border: 1px solid #EBF4FA;
    		border-radius: 10px 10px 10px 10px;
@@ -407,15 +428,15 @@ span{
 
 				.projects_list{
 					// border-color: #E7E4D3;
-					border-width: 2px;
+					border-width: 2px;		
 					height: auto;
-					width: columns(2);
+					width: columns(0.9);
 					font-family: $font-family;
 					text-align: center;
 					color: #206BA4;
 					background-color: #C0C0C0;
 					border: 1px #C0C0C0;
-		   		border-radius: 10px 10px 10px 10px;
+		   		border-radius: 50%;
 		   		box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);
 		   		-o-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);
 		   		-webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);
@@ -433,15 +454,14 @@ span{
 						font-family: $font-family;
 					}
 					.projects_list a:hover {
-						text-decoration:underline;
+						color: #BBD9EE;;
 					}
 				
 
 				.project_description{
 					height: auto;
-					width: columns(1);
-
-					margin-top: 35px;
+					width: columns(2.05);
+					margin-top: 50px;
 					font-family: $font-family;
 					text-align: center;
 					background-color: #F1EFE2;
@@ -454,6 +474,35 @@ span{
 		  	 -moz-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);
 			}
 
+				.project{
+					width:columns(4);
+					height: auto;
+					text-align: justify;
+					padding: 10px ;
+				}
+
+				.project p:nth-child(1){
+					text-align: center;	
+					text-decoration:none;
+				}
+
+				.project p:nth-child(1):link {
+					text-decoration:none;
+						color: #206BA4;
+						font-family: $font-family;
+				}
+
+				.project p:nth-child(1):hover{
+					color: #EBF4FA;	
+					text-decoration:none;
+				}
+
+				.project p:visited {
+						text-decoration:none;
+						color: #206BA4;
+						font-family: $font-family;
+					}
+				
 
 				#ruby_projects{
 					width: columns(4);
@@ -497,7 +546,7 @@ span{
 
 	.linkedin_div{
 		width:columns(2);
-		margin-left: 30px;
+		margin-left: 50px;
 		top: 20px;
 	}
 
@@ -506,9 +555,7 @@ span{
 		margin-left:  10px;
 	}
 
-	embed{
-		margin-left: 300px;
-	}
+
 //  ***************** CONTACT SECTION ********************************
 	#contact_header{
 	color: #206BA4;
@@ -623,6 +670,12 @@ span{
 		cursor: pointer;
 
 	}
+
+	.field_with_errors .message {
+    color: #D00;
+    padding-left: 5px;
+    font-size: 12 px;
+}
 
 	.inputs{
 			width: columns(2);

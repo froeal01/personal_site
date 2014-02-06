@@ -1,11 +1,9 @@
 <h1> JavaScript Projects </h1>
 
 <div id = "javaScript_projects">
-	<ul>
-		<li> Test 1 </li>
-		<li> Test 1 </li>
-		<li> Test 1 </li>
-		<li> Test 1 </li>
-		<li> Test 1 </li>
+		<ul>
+		<% @projects.each do |project| %>
+			<li><%=link_to "#{project.name}", javascript_project_path(project.id), class: "single_project" %></li>
+		<% end %>
 	</ul>
 </div>

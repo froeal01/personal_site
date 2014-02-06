@@ -3,10 +3,10 @@
 
 <div id = "ruby_on_rails_projects">
 	<ul>
-		<li> Test 1 </li>
-		<li> Test 1 </li>
-		<li> Test 1 </li>
-		<li> Test 1 </li>
-		<li> Test 1 </li>
+		<% @projects.each do |project| %>
+			<li><%=link_to "#{project.name}", ruby_on_rails_project_path(project.id), class: "single_project" %></li>
+		<% end %>
+	
+
 	</ul>
 </div>

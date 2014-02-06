@@ -6,11 +6,11 @@ gem 'rails', '4.0.0'
 # Use postgresql as the database for Active Record
 gem 'pg'
 
+#validations
+gem 'rails4_client_side_validations'	
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
-
-# Use PDFkit for pdf
-gem "pdfkit"  
 
 
 # Use Uglifier as compressor for JavaScript assets

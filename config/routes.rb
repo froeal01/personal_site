@@ -5,9 +5,9 @@ PersonalSite::Application.routes.draw do
   post 'contact' => 'contacts#create'
   get '/resume' => 'pdfs#index'
   
-  resources :ruby_projects, only: [:index]
-  resources :ruby_on_rails_projects, only: [:index]
-  resources :javascript_projects, only: [:index]
+  resources :ruby_projects, only: [:index, :show]
+  resources :ruby_on_rails_projects, only: [:index, :show]
+  resources :javascript_projects, only: [:index, :show]
 
 
   # The priority is based upon order of creation: first created -> highest priority.
