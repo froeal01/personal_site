@@ -35,6 +35,7 @@ footer,
 .projects_list,
 .project_description,
 .resume_row_keeper,
+.me_img_wrapper,
 .submit {
   width: 100%;
   max-width: 1000px;
@@ -64,6 +65,8 @@ footer,
   .project_description:after,
   .resume_row_keeper:before,
   .resume_row_keeper:after,
+  .me_img_wrapper:before,
+  .me_img_wrapper:after,
   .submit:before,
   .submit:after {
     content: "";
@@ -80,6 +83,7 @@ footer,
   .projects_list:after,
   .project_description:after,
   .resume_row_keeper:after,
+  .me_img_wrapper:after,
   .submit:after {
     clear: both; }
   footer > div,
@@ -94,6 +98,7 @@ footer,
   .projects_list > div,
   .project_description > div,
   .resume_row_keeper > div,
+  .me_img_wrapper > div,
   .submit > div {
     float: left;
     margin-right: 4.34783%;
@@ -348,8 +353,19 @@ span {
 .about_me_div {
   height: 27.5em;
   border-width: medium;
-  padding: 5em 1em 5em 1em;
+  padding: 4em 1em 5em 1em;
   background-color: #fff; }
+  .about_me_div .me_img_wrapper {
+    height: 500px;
+    width: 500px; }
+  .about_me_div .about_me_img {
+    width: 47.82609%;
+    position: relative;
+    height: 500px;
+    border-image: url("/app/assets/images/frame.png"), 98.66px repeat;
+    -o-border-image: url("frame.png") 98.66px repeat;
+    -moz-border-image: url("frame.png") 98.66px repeat;
+    -webkit-border-image: url("frame.png") 98.66px repeat; }
 
 #current_projects_header {
   color: #206BA4;
@@ -441,13 +457,13 @@ span {
 .projects_list {
   border-width: 2px;
   height: auto;
-  width: 53.82609%;
+  width: 19.13043%;
   font-family: "Signika Negative", sans-serif, times;
   text-align: center;
   color: #206BA4;
   background-color: #C0C0C0;
   border: 1px #C0C0C0;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 50%;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3);
   -o-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3);
@@ -464,12 +480,12 @@ span {
   font-family: "Signika Negative", sans-serif, times; }
 
 .projects_list a:hover {
-  text-decoration: underline; }
+  color: #BBD9EE; }
 
 .project_description {
   height: auto;
   width: 49.13043%;
-  margin-top: 35px;
+  margin-top: 50px;
   font-family: "Signika Negative", sans-serif, times;
   text-align: center;
   background-color: #F1EFE2;
@@ -484,7 +500,26 @@ span {
 .project {
   width: 100%;
   height: auto;
-  text-align: center; }
+  text-align: justify;
+  padding: 10px; }
+
+.project p:nth-child(1) {
+  text-align: center;
+  text-decoration: none; }
+
+.project p:nth-child(1):link {
+  text-decoration: none;
+  color: #206BA4;
+  font-family: "Signika Negative", sans-serif, times; }
+
+.project p:nth-child(1):hover {
+  color: #EBF4FA;
+  text-decoration: none; }
+
+.project p:visited {
+  text-decoration: none;
+  color: #206BA4;
+  font-family: "Signika Negative", sans-serif, times; }
 
 #ruby_projects {
   width: 100%; }
@@ -521,7 +556,7 @@ span {
 
 .linkedin_div {
   width: 47.82609%;
-  margin-left: 30px;
+  margin-left: 50px;
   top: 20px; }
 
 .resume_pdf {

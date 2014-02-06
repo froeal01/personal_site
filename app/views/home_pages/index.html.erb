@@ -56,7 +56,9 @@
 	<!-- About_Me_Header Ends -->
 	<!-- About_Me_Div Begins -->
 	<div class = "about_me_div">
-
+		<div class = "me_img_wrapper">
+			 <%= image_tag("website_me.jpg", class: "about_me_img") %>
+		</div>
 
 	</div>
 	<!-- About_Me_Div Ends -->
@@ -98,10 +100,10 @@
 	<div class = "resume_div">
 		<div class	= "resume_row_keeper">
 			<div class = "linkedin_div">
-				<a href="http://linkedin.com/pub/alex-froelich/78/b44/766/"><%= image_tag('linkedin-logo.jpg')%></a>
+				<a href="http://linkedin.com/pub/alex-froelich/78/b44/766/"><%= image_tag('linkedin-logo.jpg', size: "216x216")%></a>
 			</div>
 			<div class = "resume_pdf">
-			<a href = '/resume' ><%= image_tag('Resume_web2.png') %></a>
+			<a href = '/resume' ><%= image_tag('Resume_web2.png',size: "216x216") %></a>
 			</div>
 		</div>
 	</div>

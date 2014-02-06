@@ -4,7 +4,7 @@
       <%= form.label :name %>
       <%= form.text_field :name, class: 'name_field', autofocus: true, placeholder: "Name", required: true %><br>
       <%= form.label :email %>
-      <%= form.text_field :email, class: 'email_field', autofocus: true, placeholder: "email@example.com", required: true %><br>
+      <%= form.text_field :email, class: 'email_field', autofocus: true, placeholder: "email@example.com",:pattern => '[^@]+@[^@]+\.[a-zA-Z]{2,6}', required: true %><br>
       <%= form.label :subject %>
       <%= form.text_field :subject, class: 'subject_field', autofocus: true, placeholder: "Subject", required: true %><br>
       <%= form.label :body %>
