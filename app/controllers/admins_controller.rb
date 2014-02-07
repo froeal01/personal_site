@@ -3,6 +3,7 @@ class AdminsController < ApplicationController
 	before_filter :require_login
 
 	def index
+		@admin = current_user
 		@ror = RubyOnRailsProject.all
 		@ruby = RubyProject.all
 		@js = JavascriptProject.all 

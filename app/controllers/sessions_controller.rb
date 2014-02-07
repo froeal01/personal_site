@@ -17,4 +17,9 @@ class SessionsController < ApplicationController
 
 	end
 
+	def destroy
+		session.delete(:auth_token)
+		redirect_to ('/')
+	end
+
 end

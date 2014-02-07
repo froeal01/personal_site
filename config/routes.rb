@@ -6,6 +6,9 @@ PersonalSite::Application.routes.draw do
   get '/resume' => 'pdfs#index'
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
+  get 'logout' => 'sessions#destroy'
+  post 'logout' => 'sessions#destroy'
+
 
 
   resources :ruby_projects, only: [:index, :show]
