@@ -4,7 +4,7 @@
 	<ul>
 		<% @ror.each do |single_ror| %>
 		<li>
-			<%= link_to "#{single_ror.name}", edit_admins_ruby_on_rails_project(single_ror) %>
+			<%= link_to "#{single_ror.name}", edit_ruby_on_rails_project_path(single_ror.id) %>
 		</li>
 		<%end%>
 	</ul>
@@ -14,7 +14,7 @@
 	<ul>
 		<% @ruby.each do |single_ruby| %>
 		<li>
-			<%= link_to "#{single_ruby.name}", edit_admins_ruby_project_path(single_ruby) %>
+			<%= link_to "#{single_ruby.name}",edit_ruby_project_path(single_ruby.id) %>
 		</li>
 		<%end%>
 	</ul>
@@ -24,7 +24,7 @@
 	<ul>
 		<% @js.each do |single_js| %>
 		<li>
-			<%= link_to "#{single_js.name}",edit_admins_javascript_project_path(single_js) %>
+			<%= link_to "#{single_js.name}", edit_javascript_project_path(single_js.id) %>
 		</li>
 		<%end%>
 	</ul>

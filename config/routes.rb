@@ -12,7 +12,7 @@ PersonalSite::Application.routes.draw do
   resources :ruby_on_rails_projects, only: [:index, :show]
   resources :javascript_projects, only: [:index, :show]
   resources :admins, only: [:index, :show] 
-  namespace "admins" do
+  scope module: "admin" do
     resources :ruby_projects, :ruby_on_rails_projects, :javascript_projects,
     only: [:edit, :update]
   end

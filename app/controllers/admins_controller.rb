@@ -8,13 +8,6 @@ class AdminsController < ApplicationController
 		@js = JavascriptProject.all 
 	end
 
-	def show
-		@ror = RubyOnRailsProject.all
-		@ruby = RubyProject.all
-		@js = JavascriptProject.all
-
-	end
-
 
 
 	private

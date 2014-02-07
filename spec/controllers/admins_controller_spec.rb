@@ -2,6 +2,9 @@ require 'spec_helper'
 include ApplicationHelper
 
 describe AdminsController do
+	rails_project = FactoryGirl.create(:ruby_on_rails_project)
+	ruby_project = FactoryGirl.create(:ruby_project)
+	javascript_project = FactoryGirl.create(:javascript_project)
 
 	describe "index" do
 		it "should go to the correct route" do 
@@ -18,6 +21,24 @@ describe AdminsController do
 			get :index
 			# response.should render_template :index
 		end
-	end
+	
+		it "populates an array of rails projects" do 
+			current_user
+			get :index
+			assigns(rails_project).should eq(@ror)
+		end
 
+		it "populates an array of ruby projects" do 
+			current_user
+			get :index
+			assigns(ruby_project).should eq(@ruby)
+		end
+
+		it "populates an array of javascript projects" do 
+			current_user
+			get :index
+			assigns(javascript_project).should eq(@js)
+		end
+
+	end
 end
