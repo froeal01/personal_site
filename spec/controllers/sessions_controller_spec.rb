@@ -1,18 +1,28 @@
 require 'spec_helper' 
 
 describe SessionsController do
+	user = FactoryGirl.create(:user)
 
 	describe "/login" do 
 			subject {page}
-			it "should render the correct view" do 
+			it "should have a valid route" do 
 				{get: '/login'}.should route_to(
 					controller: 'sessions',
-					action: 'login')
+					action: 'new')
 			end
-			it "should render the admin login form" do 
-				visit '/login'
-				it {should have_field("username")}
-				it {should have_field("password")}
+			it "should render correct template" do 
+				get :new
+				response.should render_template :new
+			end
+			
+			it "should login when there is valid information" do 
+				post :create, :session => { :username => user.username, :password => user.password }
+        # response.should route_to('/admin')
+			end
+
+			it "should not login when the information is not valid" do 
+				post :create, :session => { :username => "invalid", :password => user.password }
+				# response.should route_to('/admin')
 			end
 		end
 

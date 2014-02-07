@@ -21,7 +21,8 @@ footer,
 .resume_row_keeper,
 .me_img_wrapper,
 iframe,	
-.submit{
+.submit,
+.admin{
 	@include row;
 }
 
@@ -687,4 +688,16 @@ iframe{
           0 4px 0 rgba(0, 0, 0, .2),
           0 6px 0 #fff,  
           0 7px 0 rgba(0, 0, 0, .2);
+
 	}
+
+
+// ##### Admit Section  ########
+
+
+.admin_sign_in{
+	float: left;
+	margin-left: 115px;
+	margin-bottom: 25px;
+}
+

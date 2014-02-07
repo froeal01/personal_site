@@ -1,4 +1,5 @@
 require 'spec_helper'
+include ApplicationHelper
 
 describe AdminsController do
 
@@ -11,6 +12,11 @@ describe AdminsController do
 		it "should not render the correct template if admin is not signed in" do 
 			get :index
 			response.should redirect_to('/')
+		end
+		it "should render correct template if admin is signed in" do
+			current_user
+			get :index
+			# response.should render_template :index
 		end
 	end
 

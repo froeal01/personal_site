@@ -4,16 +4,23 @@ PersonalSite::Application.routes.draw do
   get '/contact' => 'contacts#new'
   post 'contact' => 'contacts#create'
   get '/resume' => 'pdfs#index'
-  
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
+
+
   resources :ruby_projects, only: [:index, :show]
   resources :ruby_on_rails_projects, only: [:index, :show]
   resources :javascript_projects, only: [:index, :show]
-
+  resources :admins, only: [:index, :show] 
+  namespace "admins" do
+    resources :ruby_projects, :ruby_on_rails_projects, :javascript_projects,
+    only: [:edit, :update]
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
-  # You can have the root of your site routed with "root"
+  # You can have the root of your site routed withr "root"
   # root 'welcome#index'
 
   # Example of regular route:

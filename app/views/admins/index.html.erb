@@ -1,0 +1,31 @@
+<h1> Welcome to the manager </h1>
+<div class = "manager_projects">
+	<h5> Ruby on Rails Projects </h5>
+	<ul>
+		<% @ror.each do |single_ror| %>
+		<li>
+			<%= link_to "#{single_ror.name}", edit_admins_ruby_on_rails_project(single_ror) %>
+		</li>
+		<%end%>
+	</ul>
+</div>
+<div class = "manager_projects">
+	<h5> Ruby Projects </h5>
+	<ul>
+		<% @ruby.each do |single_ruby| %>
+		<li>
+			<%= link_to "#{single_ruby.name}", edit_admins_ruby_project_path(single_ruby) %>
+		</li>
+		<%end%>
+	</ul>
+</div>
+<div class = "manager_projects">
+	<h5> Javascript Projects </h5>
+	<ul>
+		<% @js.each do |single_js| %>
+		<li>
+			<%= link_to "#{single_js.name}",edit_admins_javascript_project_path(single_js) %>
+		</li>
+		<%end%>
+	</ul>
+</div>
