@@ -1,35 +1,50 @@
-<h1> Welcome to the manager </h1>
-<div class = "manager_projects">
-	<h5> Ruby on Rails Projects </h5>
-	<ul>
-		<% @ror.each do |single_ror| %>
-		<li>
-			<%= link_to "#{single_ror.name}", edit_ruby_on_rails_project_path(single_ror.id) %>
-		</li>
-		<%end%>
-	</ul>
-</div>
-<div class = "manager_projects">
-	<h5> Ruby Projects </h5>
-	<ul>
-		<% @ruby.each do |single_ruby| %>
-		<li>
-			<%= link_to "#{single_ruby.name}",edit_ruby_project_path(single_ruby.id) %>
-		</li>
-		<%end%>
-	</ul>
-</div>
-<div class = "manager_projects">
-	<h5> Javascript Projects </h5>
-	<ul>
-		<% @js.each do |single_js| %>
-		<li>
-			<%= link_to "#{single_js.name}", edit_javascript_project_path(single_js.id) %>
-		</li>
-		<%end%>
-	</ul>
-</div>
+<div class = "admin_container">
+	<h1> Welcome to the manager </h1>
+	<div class = "manager_projects">
+		<h5> Ruby on Rails Projects </h5>
+		<ul>
+			<% @ror.each do |single_ror| %>
+			<li>
+				<%= link_to "#{single_ror.name}", edit_ruby_on_rails_project_path(single_ror.id) %>
+			</li>
+			<%end%>
+		</ul>
+	</div>
+	<div class = "manager_projects">
+		<h5> Ruby Projects </h5>
+		<ul>
+			<% @ruby.each do |single_ruby| %>
+			<li>
+				<%= link_to "#{single_ruby.name}",edit_ruby_project_path(single_ruby.id) %>
+			</li>
+			<%end%>
+		</ul>
+	</div>
+	<div class = "manager_projects">
+		<h5> Javascript Projects </h5>
+		<ul>
+			<% @js.each do |single_js| %>
+			<li>
+				<%= link_to "#{single_js.name}", edit_javascript_project_path(single_js.id) %>
+			</li>
+			<%end%>
+		</ul>
+	</div>
 
-<div class ="sign_out">
-	<%= link_to "Sign Out", logout_path, {method: :post}%>
+	<div class= "create_new">
+	<%= form_tag new_admin_path, method: :get do  %>
+		<%=label_tag "RoR" %>
+		<%=check_box_tag :value, "ror" %><br>
+		<%=label_tag "jS" %>
+		<%=check_box_tag :value, "js" %><br>
+		<%=label_tag "Ruby" %>
+		<%=check_box_tag :value, "ruby" %><br>
+		<%=submit_tag "create" %>
+	<% end %>
+	</div>
+
+
+	<div class ="sign_out">
+		<%= link_to "Sign Out", logout_path, {method: :post}%>
+	</div>
 </div>

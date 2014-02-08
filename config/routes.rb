@@ -14,10 +14,10 @@ PersonalSite::Application.routes.draw do
   resources :ruby_projects, only: [:index, :show]
   resources :ruby_on_rails_projects, only: [:index, :show]
   resources :javascript_projects, only: [:index, :show]
-  resources :admins, only: [:index, :show] 
+  resources :admins, only: [:index, :new] 
   scope module: "admin" do
     resources :ruby_projects, :ruby_on_rails_projects, :javascript_projects,
-    only: [:edit, :update]
+    only: [:edit, :update, :create, :destroy]
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

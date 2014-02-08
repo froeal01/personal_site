@@ -18,11 +18,12 @@ footer,
 .project_row_keeper,
 .projects_list,
 .project_description,
-.resume_row_keeper,
 .me_img_wrapper,
+.resume_row_keeper,
 iframe,	
 .submit,
-.admin{
+.admin,
+.admin_container{
 	@include row;
 }
 
@@ -34,10 +35,24 @@ iframe,
 	background-color: deep pink;
 	color: blue;
 }
-ul{
+
+	ul{
 	display: inline; 
 	list-style-type: none;
+	}
+
+
+.nav_bar li{
+	top: 25px;
+	left: 15px;
+	float: left;	
+	display: inline; 
+	position: relative;
+	list-style-type: none;
+	font-size: 1.5em;
+	padding-right: 9px;
 }
+
 p{
 	color: #206BA4;
 	font-family: $font-family;
@@ -57,14 +72,17 @@ iframe{
 .nav_bar p{
 	margin: 0%;
 	padding-left: 0.5em;
+	text-align: center;
 }
 
 .nav_bar{
 	color: #206BA4;
 	width: columns(6); 
+	height: 105px;
 	font-family: $font-family;
 	font-size: 1.5em;
 	background-color: #E7E4D3;
+	text-align: center;
 	border-width: 5px;
 	border-color: #206BA4;
 	border-radius: 2px 2px 2px 2px;
@@ -278,7 +296,7 @@ iframe{
 	color: #206BA4;
 	width: columns(6); 
 	font-family: $font-family;
-	font-size: 1.5em;
+	font-size: 1.8em;
 	border-width: 5px;
 	border-color: #206BA4;
 	border-radius: 2px 2px 2px 2px;
@@ -324,7 +342,7 @@ iframe{
 	color: #206BA4;
 	width: columns(6); 
 	font-family: $font-family;
-	font-size: 1.5em;
+	font-size: 1.8em;
 	border-width: 5px;
 	border-color: #206BA4;
 	border-radius: 2px 2px 2px 2px;
@@ -522,7 +540,7 @@ iframe{
 	color: #206BA4;
 	width: columns(6); 
 	font-family: $font-family;
-	font-size: 1.5em;
+	font-size: 1.8em;
 	border-width: 5px;
 	border-color: #206BA4;
 	border-radius: 2px 2px 2px 2px;
@@ -548,7 +566,8 @@ iframe{
 	.linkedin_div{
 		width:columns(2);
 		margin-left: 50px;
-		top: 20px;
+		margin-top: 100px;
+
 	}
 
 	.resume_pdf{
@@ -562,7 +581,7 @@ iframe{
 	color: #206BA4;
 	width: columns(6); 
 	font-family: $font-family;
-	font-size: 1.5em;
+	font-size: 1.8em;
 	border-width: 5px;
 	border-color: #206BA4;
 	border-radius: 2px 2px 2px 2px;
@@ -623,6 +642,9 @@ iframe{
 			color: #BBD9EE;
 		}
 
+		.inputs p{
+			margin-left: 20px;
+		}
 	textarea{
 		width: 260px;
 		height: 170px;

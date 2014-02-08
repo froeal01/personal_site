@@ -9,7 +9,16 @@ class AdminsController < ApplicationController
 		@js = JavascriptProject.all 
 	end
 
-
+	def new
+		if params[:value] == "ror"
+			@project = RubyOnRailsProject.new
+		elsif params[:value] == "js"
+			@project = JavascriptProject.new
+		else
+			debugger
+			@project = RubyProject.new
+		end
+	end
 
 	private
 	

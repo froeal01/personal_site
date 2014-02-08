@@ -41,4 +41,18 @@ describe AdminsController do
 		end
 
 	end
+
+	describe "new" do 
+		it "should go to the correct route" do 
+			{get: new_admin_path}.should route_to(
+				controller: "admins",
+				action: "new")
+		end
+
+		it "should render the correct template" do 
+			sign_in
+			get :new
+			# response.should render_template :new
+		end
+	end
 end
