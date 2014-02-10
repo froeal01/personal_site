@@ -4,7 +4,7 @@
 		<ul>
 			<strong><li> Alex Froelich</li></strong>
 			<li>    |    </li>
-			<li> Full Stack Web Developer</li> 
+			<li> Full Stack Developer</li> 
 		</ul>
 	</div>
 	<!-- Navbar Ends -->
@@ -101,7 +101,7 @@
 	<!-- Current_Projects Div Ends-->
 	<!-- Resume Header Starts -->
 	<div id = "resume_header">
-		<p> Resume And Social Media </p>
+		<p> Résumé & Social Media </p>
 	</div>
 	<!-- Resume Header Ends -->
 	<!-- Resume Div Starts -->
@@ -109,11 +109,11 @@
 		<div class	= "resume_row_keeper">
 			<div class = "linkedin_div">
 				<a href="http://linkedin.com/pub/alex-froelich/78/b44/766/"><%= image_tag('linkedin-logo.jpg', size: "100x100")%></a>
-				<p> LinkedIN </p>
+				<p> linkedin </p>
 			</div>
 			<div class = "resume_pdf">
-			<a href = '/resume' ><%= image_tag('Resume_web2.png',size: "216x216") %></a>
-			<p> Resume </p>
+			<a href = '/resume' target="_blank" ><%= image_tag('Resume_web2.png',size: "216x216") %></a>
+			<p> Résumé </p>
 			</div>
 		</div>
 	</div>
@@ -125,7 +125,9 @@
 	<!-- Contact Header Ends -->
 	<!-- Contact Div Starts -->
 	<div class = "contact_div">
-
+		<% if flash[:notice] %>
+		<div class = "flash"><%= flash[:notice] %></div>
+	<% end %>
 		<%= render "contact/form" %>
 
 	</div>

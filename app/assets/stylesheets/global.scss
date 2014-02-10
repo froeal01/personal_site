@@ -8,6 +8,7 @@ footer {
 
 // Elements acting like rows 
 footer,
+.flash,
 .nav_bar,
 .link_tiles_top,
 .link_tiles_bottom,
@@ -32,9 +33,12 @@ iframe,
 
 
 .flash {
+	width: columns(4);
 	font-family: $font-family;
-	background-color: deep pink;
-	color: blue;
+	background-color: #C0C0C0;
+	color: #206BA4;
+	z-index: 1;
+	text-align: center;
 }
 
 	ul{
@@ -339,7 +343,7 @@ iframe{
   	width: columns(3);
   	text-align: center;
   	margin-right: 0px;
-  	font-size: 1.5em;
+  	font-size: 1.3em;
   }
 	}
 //  ***************** CURRENT PROJECTS ********************************
@@ -395,10 +399,11 @@ iframe{
 		   	font-size: 30px;
 		   	padding-left: 65px;
 		   	color: #206BA4;
-		 
-			}
+		 }
 
-				
+			.ruby_div a:hover{
+				color: #C0C0C0;
+			}
 		.ruby_on_rails_div{
 			width: columns(1);
 			height: 100px;
@@ -419,7 +424,9 @@ iframe{
 		   	font: $font-family;
 		   	color: #206BA4;
 		   	font-size: 30px;
-
+		}
+		.ruby_on_rails_div a:hover{
+				color: #C0C0C0;
 			}
 		.javaScript_div{
 			width: columns(1);
@@ -444,6 +451,9 @@ iframe{
 
 			}
 
+			.javaScript_div a:hover{
+				color: #C0C0C0;
+			}
 		.projects_link{
 					width: columns(1);
 					text-decoration: none;
@@ -511,22 +521,20 @@ iframe{
 					text-decoration:none;
 				}
 
-				.project p:nth-child(1):link {
-					text-decoration:none;
+				.project a:link {
 						color: #206BA4;
 						font-family: $font-family;
 				}
 
-				.project p:nth-child(1):hover{
-					color: #EBF4FA;	
+				.project a:nth-of-type(1):hover{
 					text-decoration:none;
 				}
 
-				.project p:visited {
-						text-decoration:none;
-						color: #206BA4;
-						font-family: $font-family;
-					}
+				// .project p:visited {
+				// 		text-decoration:none;
+				// 		color: #206BA4;
+				// 		font-family: $font-family;
+				// 	}
 				
 
 				#ruby_projects{
@@ -711,10 +719,10 @@ iframe{
 
 	}
 
-	.field_with_errors .message {
+.field_with_errors .message {
     color: #D00;
     padding-left: 5px;
-    font-size: 12 px;
+    font-size: 12px;
 }
 
 	.inputs{

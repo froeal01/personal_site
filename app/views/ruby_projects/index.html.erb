@@ -2,8 +2,10 @@
 
 <div id = "ruby_projects">
 	<ul class= "project_ul">
-		<% @projects.each do |project| %>
-			<li><%=link_to "#{project.name}", ruby_project_path(project.id), class: "single_project" %></li>
+		<% if @projects %>
+			<% @projects.each do |project| %>
+				<li><%=link_to "#{project.name}", ruby_project_path(project.id), class: "single_project" %></li>
+			<% end %>
 		<% end %>
 	</ul>
 </div>

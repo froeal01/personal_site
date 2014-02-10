@@ -1,6 +1,8 @@
 <div class = "project">
-	<p> <%= @project.name %> </p>
-	<p> <%= @project.description %> </p>
-	<a href = <%= "#{@project.url}" %>target="_blank"  ><p>Code on Github</p> </a>
+	<% if @project %>
 
+		<p> <%= @project.name %> </p>
+		<p> <%= @project.description %> </p>
+		<a href = <%= "#{@project.url}" %>target="_blank"  ><p>Code on Github</p> </a>
+	<% end %>
 </div>
