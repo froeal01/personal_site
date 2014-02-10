@@ -15,6 +15,7 @@ footer,
  #current_projects_header,
 #resume_header,
 #contact_header,
+.about_me_text,
 .project_row_keeper,
 .projects_list,
 .project_description,
@@ -331,10 +332,15 @@ iframe{
   	width: columns(2);
   	position: relative;	
   	height: 500px;
-  	border-width: 50px;
-  	border-color: black; 	 
+  	 
   }
 
+  .about_me_text{
+  	width: columns(3);
+  	text-align: center;
+  	margin-right: 0px;
+  	font-size: 1.5em;
+  }
 	}
 //  ***************** CURRENT PROJECTS ********************************
 
@@ -563,16 +569,27 @@ iframe{
   background-color: #fff;
 	}
 
-	.linkedin_div{
-		width:columns(2);
-		margin-left: 50px;
-		margin-top: 100px;
 
+
+	.linkedin_div{
+		width:columns(1);
+		margin-left: 250px;
+		margin-top: 75px;
+
+	}
+
+	.linkedin_div p{
+		margin-left: 18px;
+		margin-top: 59px;
 	}
 
 	.resume_pdf{
 		width:columns(1);
 		margin-left:  10px;
+	}
+
+	.resume_pdf p{
+		margin-left: 75px;
 	}
 
 
