@@ -90,7 +90,7 @@ end
   config.action_mailer.smtp_settings = {
   address:              'smtp.gmail.com',
   port:                 587,
-  domain:               'www.alexfroelich.com',
+  domain:               'http://rocky-beyond-9258.herokuapp.com',
   user_name:            ENV["GMAIL_USERNAME"],
   password:             ENV["GMAIL_PASSWORD"],
   authentication:       'plain',
