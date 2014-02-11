@@ -15,7 +15,6 @@ class AdminsController < ApplicationController
 		elsif params[:value] == "js"
 			@project = JavascriptProject.new
 		else
-			debugger
 			@project = RubyProject.new
 		end
 	end

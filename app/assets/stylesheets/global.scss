@@ -348,14 +348,23 @@ iframe{
   .about_me_img{
   	width: columns(2);
   	position: relative;	
-  	height: 500px;
+  	height: 250px;
+  	margin-top: 75px;
+  	border-width: 5px;
+	border-color: #206BA4;
+	border-radius: 2px 2px 2px 2px;
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 40px rgba(0,0,0,0.1) inset;
   	 
   }
 
   .about_me_text{
-  	width: columns(3);
-  	text-align: center;
-  	margin-right: 0px;
+  	width: columns(2);
+  	margin-top: 55px;
+  	float: right;
+  	text-align: justify;
+  	margin-right: 20px;
   	font-size: 1.3em;
   }
 	}
@@ -478,7 +487,7 @@ iframe{
 					// border-color: #E7E4D3;
 					border-width: 2px;		
 					height: auto;
-					width: auto;
+					width: columns(2);
 					font-family: $font-family;
 					text-align: center;
 					color: #206BA4;
@@ -508,7 +517,9 @@ iframe{
 
 				.project_description{
 					height: auto;
-					width: columns(2.05);
+					width: auto;
+					margin-left: 250px;
+					margin-right: 250px;
 					margin-top: 50px;
 					font-family: $font-family;
 					text-align: center;
@@ -523,8 +534,6 @@ iframe{
 			}
 
 				.project{
-					width:auto;
-					height: auto;
 					text-align: justify;
 					padding: 10px ;
 				}
