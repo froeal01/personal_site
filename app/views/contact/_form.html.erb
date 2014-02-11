@@ -2,13 +2,13 @@
     <div class= "inputs" >
       <p> *please enter all fields </p>
       <%= form.label :name %>
-      <%= form.text_field :name, class: 'name_field', autofocus: true, placeholder: "Name", required: true %><br>
+      <%= form.text_field :name, class: 'name_field',  placeholder: "Name", required: true %><br>
       <%= form.label :email %>
-      <%= form.text_field :email, class: 'email_field', autofocus: true, placeholder: "email@example.com",:pattern => '[^@]+@[^@]+\.[a-zA-Z]{2,6}', required: true %><br>
+      <%= form.text_field :email, class: 'email_field', placeholder: "email@example.com",:pattern => '[^@]+@[^@]+\.[a-zA-Z]{2,6}', required: true %><br>
       <%= form.label :subject %>
-      <%= form.text_field :subject, class: 'subject_field', autofocus: true, placeholder: "Subject", required: true %><br>
+      <%= form.text_field :subject, class: 'subject_field', placeholder: "Subject", required: true %><br>
       <%= form.label :body %>
-      <%= form.text_area :body, class: 'body_field', autofocus: true, placeholder: "Hello...", required: true, size: "30x10" %><br>
+      <%= form.text_area :body, class: 'body_field', placeholder: "Hello...", required: true, size: "30x10" %><br>
     </div><br><br>
 
     <div class = "submit" >
