@@ -7,6 +7,9 @@
 			<li> Full Stack Developer</li> 
 		</ul>
 	</div>
+		<% if flash[:notice] %>
+		<div class = "flash"><%= flash[:notice] %></div>
+	<% end %>
 	<!-- Navbar Ends -->
 	<!-- Tile Div Begins -->
 	<div class = "link_tiles">
@@ -123,9 +126,7 @@
 	<!-- Contact Header Ends -->
 	<!-- Contact Div Starts -->
 	<div class = "contact_div">
-		<% if flash[:notice] %>
-		<div class = "flash"><%= flash[:notice] %></div>
-	<% end %>
+	
 		<%= render "contact/form" %>
 
 	</div>
