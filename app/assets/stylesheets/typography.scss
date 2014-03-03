@@ -15,3 +15,15 @@ h2 {
   line-height: 3.1; // tweak to align h2 to baseline within container
   margin-bottom: -0.32em; // tweak to align h2 to baseline within container
 }
+
+@font-face {
+    font-family: 'deliciousroman';
+    src: url('delicious-roman-webfont-webfont.eot');
+    src: url('delicious-roman-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('delicious-roman-webfont-webfont.woff') format('woff'),
+         url('delicious-roman-webfont-webfont.ttf') format('truetype'),
+         url('delicious-roman-webfont-webfont.svg#deliciousroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
