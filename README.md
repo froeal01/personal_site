@@ -1,6 +1,5 @@
-personal_site
-=============
+Personal Site:
 
-  A site about me! Driven by BDD and using SASS to build own fluid gridsystem instead of relying on SASS/LESS frameworks. 
-  
-  Work Left- Finishing up admin side, loading projects, deployment.
+	Use of SASS and implementing own grid system instead of using a program that already establishes one.
+	Decided not to use any vendor imported CSS files
+	
