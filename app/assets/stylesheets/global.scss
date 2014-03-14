@@ -394,7 +394,7 @@ iframe{
 	.current_projects_div{
 		height: $vertical-measure * 20;
 		border-width: medium;
-	  padding: 5em 1em 5em 1em; 
+	  padding: 4em 1em 4em 1em; 
 	  background-color: #fff;
 
 
@@ -541,6 +541,7 @@ iframe{
 					text-align: center;
 					padding: 10px ;
 					width: 600px;
+					z-index: 6;
 				}
 
 				.project p{
