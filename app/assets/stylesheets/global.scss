@@ -488,7 +488,11 @@ iframe{
 					// border-color: #E7E4D3;
 					border-width: 2px;		
 					height: auto;
+<<<<<<< HEAD
 					width: 300px;
+=======
+					width: auto;
+>>>>>>> adjusted bubble size
 					font-family: $font-family;
 					text-align: center;
 					color: #206BA4;
@@ -535,6 +539,9 @@ iframe{
 			}
 
 				.project{
+
+					width:auto;
+					height: auto;
 					text-align: justify;
 					padding: 10px ;
 					width: 600px;
